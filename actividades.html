@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Actividades — Aventura Sierra TFM</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <nav class="topnav">
+    <div class="wrap navrow">
+      <a class="brand" href="index.html">Aventura Sierra TFM</a>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+
+        <li class="dropdown">
+          <a href="actividades.html">Actividades ▾</a>
+          <div class="dropdown-menu">
+            <a href="barranquismo.html">Barranquismo</a>
+            <a href="via-ferrata.html">Vía ferrata</a>
+            <a href="espeleologia.html">Espeleología</a>
+            <a href="piraguismo.html">Piragüismo</a>
+            <a href="escalada.html">Escalada</a>
+            <a href="senderismo.html">Senderismo</a>
+          </div>
+        </li>
+
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="alojamiento.html">Alojamiento</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Actividades</h1>
+      <p>Explora experiencias guiadas. La conversión se simula con clics en “precio” hacia WhatsApp o formulario.</p>
+      <div class="notice">
+        <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid">
+      <section class="card">
+        <h3>Barranquismo</h3>
+        <span class="chip">Agua</span><span class="chip">3–4 h</span>
+        <p>Descensos guiados con material técnico y briefing.</p>
+        <div class="price-row">
+          <a class="price-btn whatsapp" href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20Barranquismo"
+             target="_blank" rel="noopener" onclick="trackConversion('activities_click_whatsapp_barranquismo')">Ver precio (WhatsApp)</a>
+          <a class="price-btn contact" href="contacto.html#contacto"
+             onclick="trackConversion('activities_click_contact_barranquismo')">Consultar (formulario)</a>
+        </div>
+        <p><a href="barranquismo.html">Ver detalle →</a></p>
+      </section>
+
+      <section class="card">
+        <h3>Vía ferrata</h3>
+        <span class="chip">Alturas</span><span class="chip">2–4 h</span>
+        <p>Itinerarios equipados según nivel.</p>
+        <div class="price-row">
+          <a class="price-btn whatsapp" href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20V%C3%ADa%20ferrata"
+             target="_blank" rel="noopener" onclick="trackConversion('activities_click_whatsapp_viaferrata')">Ver precio (WhatsApp)</a>
+          <a class="price-btn contact" href="contacto.html#contacto"
+             onclick="trackConversion('activities_click_contact_viaferrata')">Consultar (formulario)</a>
+        </div>
+        <p><a href="via-ferrata.html">Ver detalle →</a></p>
+      </section>
+
+      <section class="card">
+        <h3>Piragüismo</h3>
+        <span class="chip">Familiar</span><span class="chip">1–2 h</span>
+        <p>Salida en aguas calmadas para iniciación.</p>
+        <div class="price-row">
+          <a class="price-btn whatsapp" href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20Pirag%C3%BCismo"
+             target="_blank" rel="noopener" onclick="trackConversion('activities_click_whatsapp_piraguismo')">Ver precio (WhatsApp)</a>
+          <a class="price-btn contact" href="contacto.html#contacto"
+             onclick="trackConversion('activities_click_contact_piraguismo')">Consultar (formulario)</a>
+        </div>
+        <p><a href="piraguismo.html">Ver detalle →</a></p>
+      </section>
+
+      <section class="card">
+        <h3>Espeleología</h3>
+        <span class="chip">Cueva</span><span class="chip">2–4 h</span>
+        <p>Iniciación con progresión guiada.</p>
+        <p><a href="espeleologia.html">Ver detalle →</a></p>
+      </section>
+
+      <section class="card">
+        <h3>Escalada</h3>
+        <span class="chip">Roca</span><span class="chip">2–4 h</span>
+        <p>Sesión guiada adaptada al nivel.</p>
+        <p><a href="escalada.html">Ver detalle →</a></p>
+      </section>
+
+      <section class="card">
+        <h3>Senderismo</h3>
+        <span class="chip">Naturaleza</span><span class="chip">2–5 h</span>
+        <p>Rutas interpretativas y planificación.</p>
+        <p><a href="senderismo.html">Ver detalle →</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>Sitio de demostración para fines académicos. No afiliado a empresas reales.</small>
+    </div>
+  </footer>
+
+  <div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
+    <div class="row">
+      <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
+      <div class="btns">
+        <button id="rejectBtn" type="button" onclick="setConsent(false)">Rechazar</button>
+        <button id="acceptBtn" type="button" onclick="setConsent(true)">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

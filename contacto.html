@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto — Aventura Sierra TFM</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <nav class="topnav">
+    <div class="wrap navrow">
+      <a class="brand" href="index.html">Aventura Sierra TFM</a>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="actividades.html">Actividades ▾</a>
+          <div class="dropdown-menu">
+            <a href="barranquismo.html">Barranquismo</a>
+            <a href="via-ferrata.html">Vía ferrata</a>
+            <a href="espeleologia.html">Espeleología</a>
+            <a href="piraguismo.html">Piragüismo</a>
+            <a href="escalada.html">Escalada</a>
+            <a href="senderismo.html">Senderismo</a>
+          </div>
+        </li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="alojamiento.html">Alojamiento</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Contacto (demo)</h1>
+      <p>Canal de consulta para simular la conversión (WhatsApp o formulario).</p>
+      <div class="notice">
+        <strong>Este formulario es solo demostración.</strong> No envíes datos personales reales.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="contacto" class="card">
+      <h2>Formulario</h2>
+      <p>Campos orientativos para pruebas de navegación.</p>
+
+      <form onsubmit="event.preventDefault(); trackConversion('contact_form_submit'); alert('Demo: formulario no envía datos.');">
+        <label>Actividad de interés<br>
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="actividad" placeholder="Ej: Vía ferrata" />
+        </label><br><br>
+
+        <label>Fecha aproximada<br>
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="fecha" placeholder="Ej: 15/07" />
+        </label><br><br>
+
+        <label>Nº de personas<br>
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="personas" placeholder="Ej: 4" />
+        </label><br><br>
+
+        <label>Mensaje (demo)<br>
+          <textarea style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="mensaje" rows="4" placeholder="Consulta..."></textarea>
+        </label><br><br>
+
+        <button class="price-btn contact" type="submit">Enviar (demo)</button>
+        <a class="price-btn whatsapp"
+           href="https://wa.me/34000000000?text=Hola%2C%20quiero%20informaci%C3%B3n"
+           target="_blank" rel="noopener"
+           onclick="trackConversion('contact_click_whatsapp')">WhatsApp (demo)</a>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>Sitio de demostración para fines académicos. No afiliado a empresas reales.</small>
+    </div>
+  </footer>
+
+  <div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
+    <div class="row">
+      <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
+      <div class="btns">
+        <button id="rejectBtn" type="button" onclick="setConsent(false)">Rechazar</button>
+        <button id="acceptBtn" type="button" onclick="setConsent(true)">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

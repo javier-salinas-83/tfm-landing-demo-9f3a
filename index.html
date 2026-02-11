@@ -40,11 +40,15 @@
   </style>
 
   <!-- Clarity se cargará SOLO si el usuario acepta en el banner -->
-  <script>
-    // Pega tu código Clarity dentro de loadClarity(), en el Paso 5
-    function loadClarity(){
-      // placeholder
-    }
+<script>
+  // Pega tu código Clarity dentro de loadClarity()
+  function loadClarity(){
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "vfp3qzaoit");
+  }
 
     function setConsent(value){
       localStorage.setItem("analytics_consent", value ? "yes" : "no");

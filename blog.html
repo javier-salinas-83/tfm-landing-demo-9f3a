@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Aventura Sierra TFM</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap navrow">
+    <a class="brand" href="index.html">Aventura Sierra TFM</a>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li class="dropdown">
+        <a href="actividades.html">Actividades ▾</a>
+        <div class="dropdown-menu">
+          <a href="barranquismo.html">Barranquismo</a>
+          <a href="via-ferrata.html">Vía ferrata</a>
+          <a href="espeleologia.html">Espeleología</a>
+          <a href="piraguismo.html">Piragüismo</a>
+          <a href="escalada.html">Escalada</a>
+          <a href="senderismo.html">Senderismo</a>
+        </div>
+      </li>
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="alojamiento.html">Alojamiento</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Blog</h1>
+    <p>Artículos de ejemplo para simular navegación realista (demo).</p>
+    <div class="notice">
+      <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+    <article class="card">
+      <h2>Cómo preparar una salida en verano</h2>
+      <p>Consejos orientativos: hidratación, protección solar, planificación y material.</p>
+      <a class="price-btn contact" href="contacto.html#contacto" onclick="trackConversion('blog_click_contact_post1')">Consultar</a>
+    </article>
+
+    <article class="card">
+      <h2>Seguridad básica en actividades guiadas</h2>
+      <p>Briefing, comunicación y criterios de adaptación al grupo (contenido demo).</p>
+      <a class="price-btn contact" href="contacto.html#contacto" onclick="trackConversion('blog_click_contact_post2')">Consultar</a>
+    </article>
+
+    <article class="card">
+      <h2>Qué llevar a una vía ferrata</h2>
+      <p>Ropa, calzado, agua y recomendaciones para disfrutar con seguridad (demo).</p>
+      <a class="price-btn whatsapp" href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20V%C3%ADa%20ferrata"
+         target="_blank" rel="noopener" onclick="trackConversion('blog_click_whatsapp_post3')">WhatsApp (demo)</a>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <small>Sitio de demostración para fines académicos. No afiliado a empresas reales.</small>
+  </div>
+</footer>
+
+<div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
+  <div class="row">
+    <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
+    <div class="btns">
+      <button id="rejectBtn" type="button" onclick="setConsent(false)">Rechazar</button>
+      <button id="acceptBtn" type="button" onclick="setConsent(true)">Aceptar</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

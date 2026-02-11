@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Aventura Sierra TFM — Landing demo</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;color:#111;line-height:1.45}
+    .wrap{max-width:1100px;margin:0 auto}
+    header{padding:52px 20px;background:#0b1b1a;color:#fff}
+    .cta a{display:inline-block;padding:12px 16px;border-radius:10px;text-decoration:none;margin-right:10px}
+    .cta .w{background:#25D366;color:#000}
+    .cta .t{background:#fff;color:#000}
+    main{padding:26px 20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .card{border:1px solid #e5e5e5;border-radius:14px;padding:16px;background:#fff}
+    .card h3{margin:0 0 6px}
+    .chip{display:inline-block;font-size:12px;padding:4px 8px;background:#f3f3f3;border-radius:999px;margin:0 6px 8px 0}
+    details{border:1px solid #e5e5e5;border-radius:12px;padding:12px 14px;margin-bottom:10px;background:#fff}
+    footer{padding:18px 20px;border-top:1px solid #eee;color:#555}
+    .notice{background:#fff8e1;border:1px solid #ffe08a;padding:10px 12px;border-radius:12px;margin-top:14px;color:#5a4100}
+    /* Banner cookies/analítica */
+    #consentBanner{
+      position:fixed; left:16px; right:16px; bottom:16px;
+      background:#111; color:#fff; border-radius:14px;
+      padding:14px 14px; box-shadow:0 8px 28px rgba(0,0,0,.25);
+      display:none; z-index:9999;
+    }
+    #consentBanner .row{display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between;}
+    #consentBanner p{margin:0; font-size:14px; color:#eaeaea}
+    #consentBanner .btns{display:flex; gap:10px; flex-wrap:wrap}
+    #consentBanner button{
+      border:0; border-radius:10px; padding:10px 12px; cursor:pointer; font-weight:600
+    }
+    #acceptBtn{background:#25D366; color:#000}
+    #rejectBtn{background:#333; color:#fff}
+  </style>
+
+  <!-- Clarity se cargará SOLO si el usuario acepta en el banner -->
+  <script>
+    // Pega tu código Clarity dentro de loadClarity(), en el Paso 5
+    function loadClarity(){
+      // placeholder
+    }
+
+    function setConsent(value){
+      localStorage.setItem("analytics_consent", value ? "yes" : "no");
+      document.getElementById("consentBanner").style.display = "none";
+      if(value){ loadClarity(); }
+    }
+
+    window.addEventListener("load", () => {
+      const consent = localStorage.getItem("analytics_consent");
+      if(consent === "yes"){ loadClarity(); return; }
+      if(consent === "no"){ return; }
+      document.getElementById("consentBanner").style.display = "block";
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Aventura Sierra TFM (Demo)</h1>
+      <p>Prototipo académico para evaluar navegación y optimización de conversión.</p>
+
+      <div class="cta">
+        <a class="w" href="https://wa.me/34000000000" target="_blank" rel="noopener">WhatsApp (demo)</a>
+        <a class="t" href="tel:+34000000000">Llamar (demo)</a>
+      </div>
+
+      <div class="notice">
+        <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales.
+        No introduzcas datos personales reales.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h2>Actividades</h2>
+    <p>Contenido orientativo para pruebas de navegación (no corresponde a una empresa real).</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Barrancos</h3>
+        <span class="chip">Agua</span><span class="chip">Nivel medio</span><span class="chip">3–4 h</span>
+        <p>Descenso guiado con material técnico incluido (demo).</p>
+        <a href="#contacto">Consultar</a>
+      </div>
+
+      <div class="card">
+        <h3>Vía ferrata</h3>
+        <span class="chip">Alturas</span><span class="chip">Variable</span><span class="chip">2–3 h</span>
+        <p>Recorridos equipados y adaptables a distintos niveles (demo).</p>
+        <a href="#contacto">Consultar</a>
+      </div>
+
+      <div class="card">
+        <h3>Piraguas</h3>
+        <span class="chip">Familiar</span><span class="chip">Pantano</span><span class="chip">1–2 h</span>
+        <p>Salida tranquila con opción de iniciación (demo).</p>
+        <a href="#contacto">Consultar</a>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px;">Preguntas frecuentes</h2>
+    <details><summary>¿Es apto para niños?</summary><p>Depende de actividad y edad. Se definirían criterios por actividad (demo).</p></details>
+    <details><summary>¿Qué incluye?</summary><p>Guía y material técnico (demo). Se detallaría por actividad.</p></details>
+    <details><summary>¿Qué pasa con la meteorología?</summary><p>En una implantación real habría política de reprogramación/cancelación (demo).</p></details>
+
+    <section id="contacto" style="margin-top:34px;">
+      <h2>Contacto (demo)</h2>
+      <p><em>Este formulario es solo demostración. No envíes datos personales reales.</em></p>
+      <form onsubmit="event.preventDefault(); alert('Demo: aquí se conectaría con Dataverse/Power Automate');">
+        <label>Nombre (no real)</label><br/>
+        <input type="text" placeholder="Ej: Test Usuario" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd;margin:6px 0 12px" />
+        <label>Teléfono (no real)</label><br/>
+        <input type="tel" placeholder="+34 000 000 000" style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd;margin:6px 0 12px" />
+        <label>Actividad</label><br/>
+        <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd;margin:6px 0 12px">
+          <option>Barrancos</option>
+          <option>Vía ferrata</option>
+          <option>Piraguas</option>
+        </select>
+        <label>Mensaje</label><br/>
+        <textarea rows="4" placeholder="Fecha aproximada, nº personas (demo)"
+          style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd;margin:6px 0 12px"></textarea>
+        <button type="submit" style="padding:12px 16px;border-radius:10px;border:0;background:#0b1b1a;color:#fff;cursor:pointer;">
+          Enviar
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>
+        Sitio de demostración para fines académicos (TFM). No es el sitio oficial de ninguna empresa ni está afiliado a entidades reales.
+        Contenido e imágenes de uso propio o con licencia. No introduzcas datos personales reales.
+      </small>
+    </div>
+  </footer>
+
+  <!-- Banner de consentimiento para analítica -->
+  <div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
+    <div class="row">
+      <p>
+        Este sitio usa analítica de navegación (p. ej., Microsoft Clarity) para fines académicos.
+        ¿Aceptas activar la analítica?
+      </p>
+      <div class="btns">
+        <button id="rejectBtn" onclick="setConsent(false)">Rechazar</button>
+        <button id="acceptBtn" onclick="setConsent(true)">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -112,3 +112,6 @@ footer{padding:18px 20px;border-top:1px solid #eee;color:#555}
   font-size:18px;
   line-height:1;
 }
+
+.brand{display:flex;align-items:center}
+.brand-logo{height:70px;width:auto;display:block} /* prueba 70–90 */

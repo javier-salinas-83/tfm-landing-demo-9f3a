@@ -1,17 +1,77 @@
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;color:#111;line-height:1.45}
-.wrap{max-width:1100px;margin:0 auto}
-header.hero{padding:46px 20px;background:#0b1b1a;color:#fff}
-main{padding:22px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px}
-.card{border:1px solid #e5e5e5;border-radius:14px;padding:16px;background:#fff}
-.card h3{margin:0 0 8px}
-.chip{display:inline-block;font-size:12px;padding:4px 8px;background:#f3f3f3;border-radius:999px;margin:0 6px 8px 0}
-.notice{background:#fff8e1;border:1px solid #ffe08a;padding:10px 12px;border-radius:12px;margin-top:14px;color:#5a4100}
-footer{padding:18px 20px;border-top:1px solid #eee;color:#555}
+/* =========================
+   Base
+========================= */
+:root{
+  --bg:#ffffff;
+  --text:#111111;
+  --nav:#0b1b1a;
+  --border:#e5e5e5;
+  --muted:#555555;
+  --chip:#f3f3f3;
+  --notice-bg:#fff8e1;
+  --notice-border:#ffe08a;
+  --whatsapp:#25D366;
+}
 
-/* NAVBAR */
+*{box-sizing:border-box}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  margin:0;
+  color:var(--text);
+  line-height:1.45;
+  background:var(--bg); /* fondo blanco */
+}
+.wrap{max-width:1100px;margin:0 auto}
+main{padding:22px 20px}
+
+/* =========================
+   Hero / secciones
+========================= */
+header.hero{
+  padding:46px 20px;
+  background:var(--nav);
+  color:#fff;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:14px;
+  margin-top:14px
+}
+.card{
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px;
+  background:#fff;
+}
+.card h3{margin:0 0 8px}
+.chip{
+  display:inline-block;
+  font-size:12px;
+  padding:4px 8px;
+  background:var(--chip);
+  border-radius:999px;
+  margin:0 6px 8px 0
+}
+.notice{
+  background:var(--notice-bg);
+  border:1px solid var(--notice-border);
+  padding:10px 12px;
+  border-radius:12px;
+  margin-top:14px;
+  color:#5a4100
+}
+footer{
+  padding:18px 20px;
+  border-top:1px solid #eee;
+  color:var(--muted)
+}
+
+/* =========================
+   NAVBAR
+========================= */
 .topnav{
-  background:#0b1b1a;
+  background:var(--nav);
   color:#fff;
 }
 .navrow{
@@ -19,21 +79,20 @@ footer{padding:18px 20px;border-top:1px solid #eee;color:#555}
   align-items:center;
   justify-content:space-between;
   gap:16px;
-  padding:14px 0;
+  padding:14px 20px;  /* para que no quede pegado al borde */
 }
 .brand{
   display:flex;
   align-items:center;
-  gap:10px;
-  color:#fff;
   text-decoration:none;
-  font-weight:800;
 }
 .brand-logo{
-  height:28px;
+  height:92px;         /* <-- aquí el tamaño del logo (prueba 80–110) */
   width:auto;
   display:block;
 }
+
+/* Menú */
 .menu{
   list-style:none;
   display:flex;
@@ -73,45 +132,59 @@ footer{padding:18px 20px;border-top:1px solid #eee;color:#555}
 .dropdown-menu a:hover{background:#f3f3f3}
 .dropdown:hover .dropdown-menu{display:block}
 
-/* CTA precios */
+/* =========================
+   Botones / conversiones
+========================= */
 .price-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-.price-btn{display:inline-block;padding:10px 12px;border-radius:10px;text-decoration:none;font-weight:800;border:1px solid #e5e5e5}
-.price-btn.whatsapp{background:#25D366;color:#000;border-color:#25D366}
-.price-btn.contact{background:#0b1b1a;color:#fff;border-color:#0b1b1a}
+.price-btn{
+  display:inline-block;
+  padding:10px 12px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:800;
+  border:1px solid var(--border)
+}
+.price-btn.whatsapp{
+  background:var(--whatsapp);
+  color:#000;
+  border-color:var(--whatsapp)
+}
+.price-btn.contact{
+  background:var(--nav);
+  color:#fff;
+  border-color:var(--nav)
+}
 
-/* Banner consentimiento (analítica) */
+/* =========================
+   Banner consentimiento (analítica)
+========================= */
 #consentBanner{
   position:fixed; left:16px; right:16px; bottom:16px;
   background:#111; color:#fff; border-radius:14px;
   padding:14px 14px; box-shadow:0 8px 28px rgba(0,0,0,.25);
   display:none; z-index:9999;
 }
-#consentBanner .row{display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between;}
+#consentBanner .row{
+  display:flex; gap:10px; flex-wrap:wrap;
+  align-items:center; justify-content:space-between;
+}
 #consentBanner p{margin:0; font-size:14px; color:#eaeaea; max-width:820px}
 #consentBanner .btns{display:flex; gap:10px; flex-wrap:wrap}
-#consentBanner button{border:0; border-radius:10px; padding:10px 12px; cursor:pointer; font-weight:700}
-#acceptBtn{background:#25D366; color:#000}
+#consentBanner button{
+  border:0; border-radius:10px; padding:10px 12px;
+  cursor:pointer; font-weight:700
+}
+#acceptBtn{background:var(--whatsapp); color:#000}
 #rejectBtn{background:#333; color:#fff}
 
-/* === LOGO NAVBAR (más grande) === */
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  text-decoration:none;
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 920px){
+  .menu{gap:12px}
+  .brand-logo{height:78px} /* un poco menor en pantallas pequeñas */
 }
-
-.brand-logo{
-  height:44px;          /* <-- sube/baja esto (prueba 52px si quieres más) */
-  width:auto;
-  display:block;
+@media (max-width: 720px){
+  .navrow{flex-direction:column;align-items:flex-start}
+  .menu{flex-wrap:wrap}
 }
-
-.brand-text{
-  font-weight:700;
-  font-size:18px;
-  line-height:1;
-}
-
-.brand{display:flex;align-items:center}
-.brand-logo{height:70px;width:auto;display:block} /* prueba 70–90 */

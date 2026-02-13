@@ -8,105 +8,143 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
 </head>
+
 <body>
-
-<nav class="topnav">
-  <div class="wrap navrow">
-     <a class="brand" href="index.html">
-        <img class="brand-logo" src="assets/logo.png?v=3" alt="Aventura Sierra TFM">
+  <nav class="topnav">
+    <div class="wrap navrow">
+      <!-- Logo -->
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo.png?v=1" alt="Aventura Sierra TFM">
       </a>
-    <ul class="menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li class="dropdown">
-        <a href="actividades.html">Actividades ▾</a>
-        <div class="dropdown-menu">
-          <a href="barranquismo.html">Barranquismo</a>
-          <a href="via-ferrata.html">Vía ferrata</a>
-          <a href="espeleologia.html">Espeleología</a>
-          <a href="piraguismo.html">Piragüismo</a>
-          <a href="escalada.html">Escalada</a>
-          <a href="senderismo.html">Senderismo</a>
+
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+
+        <li class="dropdown">
+          <a href="actividades.html">Actividades ▾</a>
+          <div class="dropdown-menu">
+            <a href="barranquismo.html">Barranquismo</a>
+            <a href="via-ferrata.html">Vía ferrata</a>
+            <a href="espeleologia.html">Espeleología</a>
+            <a href="piraguismo.html">Piragüismo</a>
+            <a href="escalada.html">Escalada</a>
+            <a href="senderismo.html">Senderismo</a>
+          </div>
+        </li>
+
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="alojamiento.html">Alojamiento</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Escalada</h1>
+      <p>Iníciate o mejora tu técnica en roca con monitores. Propuestas en Yeste, Molinicos y Elche de la Sierra.</p>
+
+      <div class="notice">
+        <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="card">
+      <h2>Descripción</h2>
+
+      <p>
+        Si te apetece probar la escalada en la Sierra del Segura (aunque sea tu primera vez), esta actividad está pensada
+        para que disfrutes de una jornada completa aprendiendo lo esencial: seguridad, uso del material y técnica básica en roca.
+        El objetivo es que vivas la experiencia con confianza y te lleves una base sólida para seguir progresando.
+      </p>
+
+      <p>
+        Trabajamos en diferentes sectores de escalada de <strong>Yeste</strong>, <strong>Molinicos</strong> y
+        <strong>Elche de la Sierra</strong>, eligiendo la zona más adecuada según nivel, condiciones del día y perfil del grupo.
+      </p>
+
+      <p>
+        <strong>Nota de organización:</strong> para esta actividad suelen ser necesarios <strong>2 monitores</strong>.
+        Si el grupo es de <strong>menos de 3 personas</strong>, puede aplicarse un <strong>suplemento</strong> (orientativo).
+      </p>
+    </section>
+
+    <div class="grid" style="margin-top:14px;">
+      <section class="card">
+        <h3>Taller guiado (día)</h3>
+        <span class="chip">Yeste · Molinicos · Elche de la Sierra</span>
+        <span class="chip">Iniciación / mejora</span>
+        <span class="chip">Duración: 3–5 h</span>
+
+        <p>
+          Sesión práctica para aprender o consolidar maniobras básicas (aseguramiento, progresión, comunicación y seguridad).
+          Se adapta el contenido al nivel del grupo.
+        </p>
+
+        <div class="price-row">
+          <!-- Precio (conversión) -->
+          <a class="price-btn whatsapp"
+             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20y%20disponibilidad%20para%20Escalada%20en%20Yeste%2FMolinicos%2FElche%20de%20la%20Sierra%20(65%E2%82%AC)"
+             target="_blank" rel="noopener"
+             onclick="trackConversion('escalada_price_click_whatsapp')">
+             65€ · Reservar por WhatsApp
+          </a>
+
+          <a class="price-btn contact"
+             href="contacto.html#contacto"
+             onclick="trackConversion('escalada_price_click_contact')">
+             65€ · Consultar por formulario
+          </a>
         </div>
-      </li>
-      <li><a href="quienes-somos.html">Quiénes somos</a></li>
-      <li><a href="alojamiento.html">Alojamiento</a></li>
-      <li><a href="galeria.html">Galería</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
-  </div>
-</nav>
 
-<header class="hero">
-  <div class="wrap">
-    <h1>Escalada</h1>
-    <p>Sesión guiada adaptada al nivel: iniciación o perfeccionamiento (demo).</p>
-    <div class="notice">
-      <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
+        <p style="margin-top:10px;">
+          <small>*Precio orientativo para la demo. La contratación se simula vía WhatsApp o formulario.</small>
+        </p>
+      </section>
+
+      <section class="card">
+        <h3>Qué incluye</h3>
+        <ul>
+          <li>Planificación de la actividad y elección de sector según nivel</li>
+          <li>Briefing de seguridad y acompañamiento por monitores</li>
+          <li>Aprendizaje práctico adaptado al grupo</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Qué llevar</h3>
+        <ul>
+          <li>Ropa cómoda y calzado deportivo</li>
+          <li>Agua y algo de comida</li>
+          <li>Protección solar (según época)</li>
+        </ul>
+      </section>
+    </div>
+
+    <p style="margin-top:18px;"><a href="actividades.html">← Volver a Actividades</a></p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>Sitio de demostración para fines académicos. No afiliado a empresas reales.</small>
+    </div>
+  </footer>
+
+  <!-- Banner de consentimiento (Clarity solo carga si aceptan) -->
+  <div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
+    <div class="row">
+      <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
+      <div class="btns">
+        <button id="rejectBtn" type="button" onclick="setConsent(false)">Rechazar</button>
+        <button id="acceptBtn" type="button" onclick="setConsent(true)">Aceptar</button>
+      </div>
     </div>
   </div>
-</header>
-
-<main class="wrap">
-  <section class="card">
-    <h2>Descripción</h2>
-    <p>Contenido orientativo para pruebas de UX. La planificación se adapta a la experiencia y al grupo.</p>
-
-    <div class="price-row">
-      <a class="price-btn whatsapp"
-         href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20Escalada"
-         target="_blank" rel="noopener"
-         onclick="trackConversion('escalada_price_click_whatsapp')">Ver precio (WhatsApp)</a>
-
-      <a class="price-btn contact"
-         href="contacto.html#contacto"
-         onclick="trackConversion('escalada_price_click_contact')">Consultar (formulario)</a>
-    </div>
-  </section>
-
-  <div class="grid" style="margin-top:14px;">
-    <section class="card">
-      <h3>Qué practicar (demo)</h3>
-      <ul>
-        <li>Técnica básica y seguridad</li>
-        <li>Uso de material (orientativo)</li>
-        <li>Progresión y comunicación</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h3>Qué llevar</h3>
-      <ul>
-        <li>Calzado deportivo (o pies de gato si se dispone)</li>
-        <li>Agua y protección solar</li>
-        <li>Ropa cómoda</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h3>Seguridad</h3>
-      <p>La actividad puede adaptarse por meteorología y condiciones del sector (demo).</p>
-    </section>
-  </div>
-
-  <p style="margin-top:18px;"><a href="actividades.html">← Volver a Actividades</a></p>
-</main>
-
-<footer>
-  <div class="wrap">
-    <small>Sitio de demostración para fines académicos. No afiliado a empresas reales.</small>
-  </div>
-</footer>
-
-<div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
-  <div class="row">
-    <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
-    <div class="btns">
-      <button id="rejectBtn" type="button" onclick="setConsent(false)">Rechazar</button>
-      <button id="acceptBtn" type="button" onclick="setConsent(true)">Aceptar</button>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>

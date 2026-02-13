@@ -10,18 +10,14 @@
 </head>
 
 <body>
-
   <nav class="topnav">
     <div class="wrap navrow">
-      <a class="brand" href="index.html">
-        <!-- Si ya tienes el logo en tu navbar, mantén tu <img> actual.
-             Si no, puedes usar este (ajusta ruta si lo tienes en /assets): -->
-        <!-- <img class="brand-logo" src="assets/logo.png?v=1" alt="Aventura Sierra TFM"> -->
+      <a class="brand" href="index.html" aria-label="Aventura Sierra TFM">
+        <img class="brand-logo" src="assets/logo.png?v=1" alt="Aventura Sierra TFM">
       </a>
 
       <ul class="menu">
         <li><a href="index.html">Inicio</a></li>
-
         <li class="dropdown">
           <a href="actividades.html">Actividades ▾</a>
           <div class="dropdown-menu">
@@ -33,7 +29,6 @@
             <a href="senderismo.html">Senderismo</a>
           </div>
         </li>
-
         <li><a href="quienes-somos.html">Quiénes somos</a></li>
         <li><a href="alojamiento.html">Alojamiento</a></li>
         <li><a href="galeria.html">Galería</a></li>
@@ -46,8 +41,7 @@
   <header class="hero">
     <div class="wrap">
       <h1>Vía ferrata</h1>
-      <p>Recorridos equipados para disfrutar de la verticalidad con guía y máxima seguridad.</p>
-
+      <p>Recorridos equipados en montaña para disfrutar de la verticalidad con seguridad: grapas, peldaños, cable de vida y pasos aéreos.</p>
       <div class="notice">
         <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
       </div>
@@ -56,101 +50,61 @@
 
   <main class="wrap">
     <section class="card">
-      <h2>¿Qué es una vía ferrata?</h2>
-      <p>
-        Una vía ferrata es un itinerario en montaña con tramos equipados (grapas, peldaños, cable de vida y, en ocasiones,
-        puentes) que permite avanzar por zonas horizontales y verticales. Se progresa con arnés y disipador anclado al cable
-        de seguridad durante el recorrido, siguiendo las indicaciones del guía.
-      </p>
-      <p>
-        La sensación de altura forma parte de la experiencia, pero el objetivo es que puedas disfrutar del recorrido con confianza,
-        ritmo adaptado al grupo y una explicación previa de técnica y seguridad.
-      </p>
+      <h2>Opciones disponibles</h2>
+      <p>Dos propuestas con distinta exigencia. El precio funciona como clic de “conversión” y abre WhatsApp con un mensaje pre-rellenado.</p>
     </section>
 
-    <h2 style="margin-top:22px;">Opciones disponibles</h2>
-
-    <div class="grid">
-      <!-- MONTE ARDAL -->
+    <div class="grid" style="margin-top:14px;">
       <section class="card">
         <h3>Monte Ardal</h3>
-        <span class="chip">Zona: Monte Ardal</span>
-        <span class="chip">Nivel: Medio</span>
-        <span class="chip">Duración: 2–4 h</span>
-
+        <span class="chip">Nivel medio</span><span class="chip">2–4 h</span><span class="chip">Pasos aéreos</span>
         <p>
-          Recorrido equilibrado para quienes buscan una primera experiencia completa: progresión cómoda,
-          tramos equipados variados y un final con vistas. Ideal para grupos que quieren “altura” sin que
-          la técnica sea excesiva.
+          Itinerario equilibrado para disfrutar de la altura con progresión guiada. Combina tramos verticales con secciones más cómodas,
+          ideal para quienes buscan una experiencia completa sin que sea extrema.
         </p>
-
         <div class="meta">
-          <div><strong>Incluye:</strong> guía, material técnico (arnés y disipador), briefing de seguridad</div>
-          <div><strong>Recomendado:</strong> calzado de montaña/trekking, agua, guantes finos opcionales</div>
+          <div><strong>Recomendado:</strong> calzado de montaña/trekking, agua, ropa cómoda</div>
+          <div><strong>Incluye:</strong> guía, material técnico (según actividad), briefing de seguridad</div>
         </div>
 
-        <div class="price-row" style="margin-top:12px;">
-          <!-- Precio: 45€ -->
+        <div style="margin-top:12px;">
           <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20V%C3%ADa%20Ferrata%20Monte%20Ardal%20(45%E2%82%AC).%20%C2%BFDisponibilidad%3F"
+             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20V%C3%ADa%20ferrata%20-%20Monte%20Ardal%20(45%E2%82%AC).%20%C2%BFDisponibilidad%3F"
              target="_blank" rel="noopener"
-             onclick="trackConversion('viaferrata_price_click_whatsapp_monteardal_45')">
-             45€ (WhatsApp)
-          </a>
-
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('viaferrata_price_click_contact_monteardal_45')">
-             45€ (Formulario)
+             onclick="trackConversion('viaferrata_price_click_whatsapp_monte_ardal_45')">
+            45 €
           </a>
         </div>
-
-        <p style="margin-top:14px;"><a href="contacto.html#contacto">Consultar disponibilidad →</a></p>
       </section>
 
-      <!-- NERPIO -->
       <section class="card">
         <h3>Nerpio</h3>
-        <span class="chip">Zona: Nerpio</span>
-        <span class="chip">Nivel: Medio–alto</span>
-        <span class="chip">Duración: 2–4 h</span>
-
+        <span class="chip">Media–alta</span><span class="chip">3–5 h</span><span class="chip">Más técnica</span>
         <p>
-          Opción más “cañera” para quienes quieren un extra de exposición y continuidad en pared.
-          Se plantean pasos con mayor sensación de verticalidad y un ritmo algo más exigente,
-          siempre adaptando el recorrido al grupo.
+          Opción con mayor sensación de aventura: tramos más largos y expuestos, ritmo más sostenido y progresión técnica.
+          Perfecta para quienes quieren un plus manteniendo el enfoque en seguridad.
         </p>
-
         <div class="meta">
-          <div><strong>Incluye:</strong> guía, material técnico (arnés y disipador), briefing de seguridad</div>
-          <div><strong>Recomendado:</strong> calzado técnico, agua, ropa cómoda, guantes finos</div>
+          <div><strong>Recomendado:</strong> buena forma física, agua extra, guantes finos opcionales</div>
+          <div><strong>Incluye:</strong> guía, material técnico (según actividad), briefing de seguridad</div>
         </div>
 
-        <div class="price-row" style="margin-top:12px;">
-          <!-- Precio: 50€ -->
+        <div style="margin-top:12px;">
           <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20V%C3%ADa%20Ferrata%20Nerpio%20(50%E2%82%AC).%20%C2%BFDisponibilidad%3F"
+             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20V%C3%ADa%20ferrata%20-%20Nerpio%20(50%E2%82%AC).%20%C2%BFDisponibilidad%3F"
              target="_blank" rel="noopener"
              onclick="trackConversion('viaferrata_price_click_whatsapp_nerpio_50')">
-             50€ (WhatsApp)
-          </a>
-
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('viaferrata_price_click_contact_nerpio_50')">
-             50€ (Formulario)
+            50 €
           </a>
         </div>
-
-        <p style="margin-top:14px;"><a href="contacto.html#contacto">Consultar disponibilidad →</a></p>
       </section>
     </div>
 
     <h2 style="margin-top:22px;">Meteorología y seguridad</h2>
     <section class="card">
       <p>
-        La seguridad manda. Si hay tormenta eléctrica, lluvia intensa o viento fuerte, la actividad puede ajustarse:
-        cambio de horario, reprogramación o alternativa en función de las condiciones del día.
+        Si hay tormenta eléctrica, lluvia intensa o viento fuerte, se puede ajustar el horario o reprogramar.
+        La decisión final se toma con criterios de seguridad y guía.
       </p>
     </section>
 
@@ -163,7 +117,6 @@
     </div>
   </footer>
 
-  <!-- Banner de consentimiento (Clarity solo carga si aceptan) -->
   <div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
     <div class="row">
       <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
@@ -173,6 +126,5 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>

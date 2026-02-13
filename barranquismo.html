@@ -8,228 +8,166 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
 </head>
+
 <body>
 
-<nav class="topnav">
-  <div class="wrap navrow">
-    <a class="brand" href="index.html">
-      <img class="brand-logo" src="assets/logo.png?v=1" alt="Aventura Sierra TFM">
-    </a>
+  <nav class="topnav">
+    <div class="wrap navrow">
+      <a class="brand" href="index.html" aria-label="Aventura Sierra TFM">
+        <img class="brand-logo" src="assets/logo.png?v=1" alt="Aventura Sierra TFM">
+      </a>
 
-    <ul class="menu">
-      <li><a href="index.html">Inicio</a></li>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
 
-      <li class="dropdown">
-        <a href="actividades.html">Actividades ▾</a>
-        <div class="dropdown-menu">
-          <a href="barranquismo.html">Barranquismo</a>
-          <a href="via-ferrata.html">Vía ferrata</a>
-          <a href="espeleologia.html">Espeleología</a>
-          <a href="piraguismo.html">Piragüismo</a>
-          <a href="escalada.html">Escalada</a>
-          <a href="senderismo.html">Senderismo</a>
+        <li class="dropdown">
+          <a href="actividades.html">Actividades ▾</a>
+          <div class="dropdown-menu">
+            <a href="barranquismo.html">Barranquismo</a>
+            <a href="via-ferrata.html">Vía ferrata</a>
+            <a href="espeleologia.html">Espeleología</a>
+            <a href="piraguismo.html">Piragüismo</a>
+            <a href="escalada.html">Escalada</a>
+            <a href="senderismo.html">Senderismo</a>
+          </div>
+        </li>
+
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="alojamiento.html">Alojamiento</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Barranquismo</h1>
+      <p>Descensos guiados por cañones con pasos acuáticos, destrepes y tramos de aventura adaptados al nivel del grupo.</p>
+
+      <div class="notice">
+        <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="card">
+      <h2>Opciones en la zona</h2>
+      <p>
+        Propuestas con duraciones y nivel técnico crecientes. El precio se muestra como “etiqueta” clicable para simular conversión
+        (redirección a WhatsApp).
+      </p>
+    </section>
+
+    <div class="grid" style="margin-top:14px;">
+
+      <!-- Opción 1 -->
+      <section class="card">
+        <h3>Río Claro</h3>
+        <span class="chip">Agua</span><span class="chip">Iniciación</span><span class="chip">2–3 h</span>
+
+        <p>
+          Recorrido pensado para una primera toma de contacto: progresión cómoda, saltos opcionales según el grupo
+          y explicación de técnicas básicas antes de cada paso.
+        </p>
+
+        <div class="meta">
+          <div><strong>Perfil:</strong> ideal para grupos y familias con experiencia previa mínima</div>
+          <div><strong>Recomendado:</strong> calzado cerrado que se pueda mojar, agua, ropa de recambio</div>
         </div>
-      </li>
 
-      <li><a href="quienes-somos.html">Quiénes somos</a></li>
-      <li><a href="alojamiento.html">Alojamiento</a></li>
-      <li><a href="galeria.html">Galería</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
-  </div>
-</nav>
+        <div style="margin-top:12px;">
+          <a class="price-btn whatsapp"
+             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Barranquismo%20-%20R%C3%ADo%20Claro%20(50%E2%82%AC).%20%C2%BFDisponibilidad%3F"
+             target="_blank" rel="noopener"
+             onclick="trackConversion('barranquismo_price_click_whatsapp_rio_claro_50')">
+            50 €
+          </a>
+        </div>
+      </section>
 
-<header class="hero">
-  <div class="wrap">
-    <h1>Barranquismo</h1>
-    <p>Descensos por cañones con saltos, toboganes naturales y agua fresca en el entorno de Yeste y Segura de la Sierra.</p>
+      <!-- Opción 2 -->
+      <section class="card">
+        <h3>Garganta del Segura</h3>
+        <span class="chip">Agua</span><span class="chip">Nivel medio</span><span class="chip">3–4 h</span>
 
-    <div class="notice">
-      <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
+        <p>
+          Barranco más completo, con tramos encajonados y pasos más técnicos. Se trabaja progresión con seguridad,
+          lectura del terreno y ritmos del grupo.
+        </p>
+
+        <div class="meta">
+          <div><strong>Perfil:</strong> para quienes ya han hecho alguna actividad similar o están en buena forma</div>
+          <div><strong>Recomendado:</strong> guantes finos opcionales, calzado con buena suela, ropa térmica si refresca</div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <a class="price-btn whatsapp"
+             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Barranquismo%20-%20Garganta%20del%20Segura%20(50%E2%82%AC).%20%C2%BFDisponibilidad%3F"
+             target="_blank" rel="noopener"
+             onclick="trackConversion('barranquismo_price_click_whatsapp_garganta_segura_50')">
+            50 €
+          </a>
+        </div>
+      </section>
+
+      <!-- Opción 3 -->
+      <section class="card">
+        <h3>Cañón del Robledal</h3>
+        <span class="chip">Agua</span><span class="chip">Avanzado</span><span class="chip">4–5 h</span>
+
+        <p>
+          Opción más exigente: mayor continuidad, pasos técnicos y gestión de la fatiga. Se orienta a participantes
+          con buena condición física y gusto por el reto.
+        </p>
+
+        <div class="meta">
+          <div><strong>Perfil:</strong> recomendado para gente activa y con tolerancia a tramos largos</div>
+          <div><strong>Recomendado:</strong> snack energético, agua extra y ropa de recambio completa</div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <a class="price-btn whatsapp"
+             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Barranquismo%20-%20Ca%C3%B1%C3%B3n%20del%20Robledal%20(70%E2%82%AC).%20%C2%BFDisponibilidad%3F"
+             target="_blank" rel="noopener"
+             onclick="trackConversion('barranquismo_price_click_whatsapp_robletal_70')">
+            70 €
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <h2 style="margin-top:22px;">Seguridad y meteorología</h2>
+    <section class="card">
+      <p>
+        La seguridad manda. Si hay crecida, tormenta eléctrica o condiciones que aumenten el riesgo, se puede cambiar el horario,
+        proponer alternativa o reprogramar. El itinerario final se decide con criterios de guía y condiciones del día.
+      </p>
+    </section>
+
+    <p style="margin-top:18px;"><a href="actividades.html">← Volver a Actividades</a></p>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>Sitio de demostración para fines académicos. No afiliado a empresas reales.</small>
+    </div>
+  </footer>
+
+  <div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
+    <div class="row">
+      <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
+      <div class="btns">
+        <button id="rejectBtn" type="button" onclick="setConsent(false)">Rechazar</button>
+        <button id="acceptBtn" type="button" onclick="setConsent(true)">Aceptar</button>
+      </div>
     </div>
   </div>
-</header>
-
-<main class="wrap">
-
-  <section class="card">
-    <h2>¿En qué consiste?</h2>
-    <p>
-      El barranquismo combina senderismo, progresión por roca y tramos acuáticos en un recorrido guiado.
-      Dependiendo del barranco, podrás encontrar pasillos estrechos, destrepes, saltos opcionales,
-      zonas de nado y pequeños rápeles. Elegimos la opción más adecuada según nivel, caudal y condiciones del día.
-    </p>
-    <p>
-      La zona de <strong>Yeste</strong> y el entorno de <strong>Segura de la Sierra</strong> ofrecen descensos muy variados,
-      desde propuestas familiares hasta itinerarios más técnicos. La prioridad es una experiencia divertida y segura,
-      con briefing inicial y guía durante todo el recorrido.
-    </p>
-  </section>
-
-  <h2 style="margin-top:18px;">Opciones de descenso</h2>
-
-  <div class="grid">
-
-    <!-- OPCIÓN 1 -->
-    <section class="card">
-      <h3>Río Claro (iniciación — Yeste)</h3>
-      <span class="chip">Familiar</span><span class="chip">Agua</span><span class="chip">2–3 h</span>
-      <p>
-        Descenso ideal para iniciarse: pasos sencillos, pozas para nadar y toboganes naturales suaves.
-        Saltos siempre <strong>opcionales</strong>. Perfecto para grupos que quieren probar por primera vez.
-      </p>
-
-      <div class="meta">
-        <div><strong>Zona:</strong> Yeste</div>
-        <div><strong>Dificultad:</strong> Baja–media (orientativa)</div>
-        <div><strong>Requisitos:</strong> saber nadar, calzado deportivo/trekking y ropa de baño</div>
-      </div>
-
-      <div class="price-row" style="margin-top:12px;">
-        <!-- Sustituye XX por el precio real -->
-        <a class="price-tag"
-           href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Barranquismo%20R%C3%ADo%20Claro%20(Yeste)%20por%20XX%E2%82%AC"
-           target="_blank" rel="noopener"
-           onclick="trackConversion('barranquismo_price_tag_click_whatsapp_iniciacion')">
-          XX € (ver precio)
-        </a>
-      </div>
-
-      <div class="price-row">
-        <a class="price-btn whatsapp"
-           href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20y%20disponibilidad%20para%20Barranquismo%20R%C3%ADo%20Claro%20(Yeste)"
-           target="_blank" rel="noopener"
-           onclick="trackConversion('barranquismo_cta_whatsapp_iniciacion')">WhatsApp</a>
-
-        <a class="price-btn contact"
-           href="contacto.html#contacto"
-           onclick="trackConversion('barranquismo_cta_contact_iniciacion')">Formulario</a>
-      </div>
-    </section>
-
-    <!-- OPCIÓN 2 -->
-    <section class="card">
-      <h3>Garganta del Segura (nivel medio — Segura de la Sierra)</h3>
-      <span class="chip">Aventura</span><span class="chip">3–4 h</span><span class="chip">Toboganes</span>
-      <p>
-        Recorrido más completo y dinámico, con mayor continuidad y secciones acuáticas.
-        Puede incluir destrepes y algún rapel sencillo según el tramo elegido.
-      </p>
-
-      <div class="meta">
-        <div><strong>Zona:</strong> Segura de la Sierra</div>
-        <div><strong>Dificultad:</strong> Media (orientativa)</div>
-        <div><strong>Requisitos:</strong> condición física normal, saber nadar y ganas de mojarse</div>
-      </div>
-
-      <div class="price-row" style="margin-top:12px;">
-        <a class="price-tag"
-           href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Barranquismo%20Garganta%20del%20Segura%20por%20XX%E2%82%AC"
-           target="_blank" rel="noopener"
-           onclick="trackConversion('barranquismo_price_tag_click_whatsapp_medio')">
-          XX € (ver precio)
-        </a>
-      </div>
-
-      <div class="price-row">
-        <a class="price-btn whatsapp"
-           href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20y%20disponibilidad%20para%20Barranquismo%20Garganta%20del%20Segura"
-           target="_blank" rel="noopener"
-           onclick="trackConversion('barranquismo_cta_whatsapp_medio')">WhatsApp</a>
-
-        <a class="price-btn contact"
-           href="contacto.html#contacto"
-           onclick="trackConversion('barranquismo_cta_contact_medio')">Formulario</a>
-      </div>
-    </section>
-
-    <!-- OPCIÓN 3 -->
-    <section class="card">
-      <h3>Cañón del Robledal (técnico — entorno Yeste/Segura)</h3>
-      <span class="chip">Técnico</span><span class="chip">4–5 h</span><span class="chip">Rápeles</span>
-      <p>
-        Opción para quien busca un plus: secciones más verticales y técnica de cuerda con varios rápeles.
-        La ruta final depende del caudal y del perfil del grupo.
-      </p>
-
-      <div class="meta">
-        <div><strong>Zona:</strong> entorno Yeste / Segura de la Sierra</div>
-        <div><strong>Dificultad:</strong> Media–alta (orientativa)</div>
-        <div><strong>Requisitos:</strong> saber nadar, buen estado físico y comodidad con altura/rapel</div>
-      </div>
-
-      <div class="price-row" style="margin-top:12px;">
-        <a class="price-tag"
-           href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Barranquismo%20Ca%C3%B1%C3%B3n%20del%20Robledal%20por%20XX%E2%82%AC"
-           target="_blank" rel="noopener"
-           onclick="trackConversion('barranquismo_price_tag_click_whatsapp_tecnico')">
-          XX € (ver precio)
-        </a>
-      </div>
-
-      <div class="price-row">
-        <a class="price-btn whatsapp"
-           href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20y%20disponibilidad%20para%20Barranquismo%20Ca%C3%B1%C3%B3n%20del%20Robledal"
-           target="_blank" rel="noopener"
-           onclick="trackConversion('barranquismo_cta_whatsapp_tecnico')">WhatsApp</a>
-
-        <a class="price-btn contact"
-           href="contacto.html#contacto"
-           onclick="trackConversion('barranquismo_cta_contact_tecnico')">Formulario</a>
-      </div>
-    </section>
-
-  </div>
-
-  <h2 style="margin-top:18px;">Qué llevar</h2>
-  <div class="grid">
-    <section class="card">
-      <h3>Imprescindible</h3>
-      <ul>
-        <li>Calzado que se pueda mojar (deportiva/trekking)</li>
-        <li>Ropa de baño y toalla</li>
-        <li>Agua y algo de comida si el recorrido es largo</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h3>Recomendado</h3>
-      <ul>
-        <li>Ropa de recambio</li>
-        <li>Protección solar (según tramo)</li>
-        <li>Gafas con cinta / cordón</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h3>Meteorología y seguridad</h3>
-      <p>
-        La actividad se adapta al caudal, previsión y condiciones del terreno.
-        Si el riesgo aumenta (tormenta, crecida, viento fuerte), se puede proponer alternativa o reprogramación.
-      </p>
-    </section>
-  </div>
-
-  <p style="margin-top:18px;"><a href="actividades.html">← Volver a Actividades</a></p>
-</main>
-
-<footer>
-  <div class="wrap">
-    <small>Sitio de demostración para fines académicos. No afiliado a empresas reales.</small>
-  </div>
-</footer>
-
-<!-- Banner de consentimiento (Clarity solo carga si aceptan) -->
-<div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
-  <div class="row">
-    <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
-    <div class="btns">
-      <button id="rejectBtn" type="button" onclick="setConsent(false)">Rechazar</button>
-      <button id="acceptBtn" type="button" onclick="setConsent(true)">Aceptar</button>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>

@@ -8,107 +8,181 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
 </head>
+
 <body>
+  <nav class="topnav">
+    <div class="wrap navrow">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo.png?v=1" alt="Aventura Sierra TFM">
+      </a>
 
-<nav class="topnav">
-  <div class="wrap navrow">
-    <a class="brand" href="index.html">
-        <img class="brand-logo" src="assets/logo.png?v=3" alt="Aventura Sierra TFM">
-    </a>
-    <ul class="menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li class="dropdown">
-        <a href="actividades.html">Actividades ▾</a>
-        <div class="dropdown-menu">
-          <a href="barranquismo.html">Barranquismo</a>
-          <a href="via-ferrata.html">Vía ferrata</a>
-          <a href="espeleologia.html">Espeleología</a>
-          <a href="piraguismo.html">Piragüismo</a>
-          <a href="escalada.html">Escalada</a>
-          <a href="senderismo.html">Senderismo</a>
-        </div>
-      </li>
-      <li><a href="quienes-somos.html">Quiénes somos</a></li>
-      <li><a href="alojamiento.html">Alojamiento</a></li>
-      <li><a href="galeria.html">Galería</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
-  </div>
-</nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
 
-<header class="hero">
-  <div class="wrap">
-    <h1>Piragüismo</h1>
-    <p>Actividad en aguas tranquilas orientada a iniciación, grupos y familias (demo).</p>
-    <div class="notice">
-      <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
-    </div>
-  </div>
-</header>
+        <li class="dropdown">
+          <a href="actividades.html">Actividades ▾</a>
+          <div class="dropdown-menu">
+            <a href="barranquismo.html">Barranquismo</a>
+            <a href="via-ferrata.html">Vía ferrata</a>
+            <a href="espeleologia.html">Espeleología</a>
+            <a href="piraguismo.html">Piragüismo</a>
+            <a href="escalada.html">Escalada</a>
+            <a href="senderismo.html">Senderismo</a>
+          </div>
+        </li>
 
-<main class="wrap">
-  <section class="card">
-    <h2>Descripción</h2>
-    <p>
-      Ruta orientativa para pruebas de UX. La duración y la distancia se adaptan a las condiciones y al grupo.
-    </p>
-
-    <div class="price-row">
-      <a class="price-btn whatsapp"
-         href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20Pirag%C3%BCismo"
-         target="_blank" rel="noopener"
-         onclick="trackConversion('piraguismo_price_click_whatsapp')">Ver precio (WhatsApp)</a>
-
-      <a class="price-btn contact"
-         href="contacto.html#contacto"
-         onclick="trackConversion('piraguismo_price_click_contact')">Consultar (formulario)</a>
-    </div>
-  </section>
-
-  <div class="grid" style="margin-top:14px;">
-    <section class="card">
-      <h3>Qué incluye (demo)</h3>
-      <ul>
-        <li>Chaleco y material (orientativo)</li>
-        <li>Briefing básico</li>
-        <li>Recomendaciones de seguridad</li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="alojamiento.html">Alojamiento</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
-    </section>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Piragüismo en el Río Segura (pantano)</h1>
+      <p>Plan acuático ideal para iniciación: ritmo tranquilo, paisaje y diversión en grupo.</p>
+
+      <div class="notice">
+        <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
 
     <section class="card">
-      <h3>Qué llevar</h3>
-      <ul>
-        <li>Gorra y crema solar</li>
-        <li>Agua</li>
-        <li>Ropa que se pueda mojar</li>
-      </ul>
+      <h2>Descripción</h2>
+      <p>
+        La actividad de piragüismo en el <strong>Río Segura</strong>, en zona de <strong>pantano/aguas calmadas</strong>,
+        es perfecta para aprender lo básico y disfrutar del agua sin prisas. Tras una explicación inicial,
+        salimos a remar y practicamos giros, equilibrio y coordinación en un entorno controlado.
+      </p>
+
+      <div class="grid" style="margin-top:14px;">
+        <!-- OPCIÓN 20€ -->
+        <section class="card">
+          <h3>Opción iniciación</h3>
+          <p>
+            Sesión corta y sencilla para primera toma de contacto. Ideal si quieres probar la actividad
+            o vienes con niños/grupo heterogéneo.
+          </p>
+
+          <div class="price-row">
+            <a class="price-btn whatsapp"
+               href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20y%20reserva%20de%20Pirag%C3%BCismo%20(Opc.%20Iniciaci%C3%B3n)%20-%2020%E2%82%AC"
+               target="_blank" rel="noopener"
+               onclick="trackConversion('piraguismo_20_click_whatsapp')">
+               20€ · WhatsApp
+            </a>
+
+            <a class="price-btn contact"
+               href="contacto.html#contacto"
+               onclick="trackConversion('piraguismo_20_click_contact')">
+               20€ · Formulario
+            </a>
+          </div>
+        </section>
+
+        <!-- OPCIÓN 50€ -->
+        <section class="card">
+          <h3>Opción completa</h3>
+          <p>
+            Más tiempo en el agua y recorrido más amplio (según condiciones del día).
+            Recomendado si quieres una experiencia más “redonda” y con más práctica.
+          </p>
+
+          <div class="price-row">
+            <a class="price-btn whatsapp"
+               href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20y%20reserva%20de%20Pirag%C3%BCismo%20(Opc.%20Completa)%20-%2050%E2%82%AC"
+               target="_blank" rel="noopener"
+               onclick="trackConversion('piraguismo_50_click_whatsapp')">
+               50€ · WhatsApp
+            </a>
+
+            <a class="price-btn contact"
+               href="contacto.html#contacto"
+               onclick="trackConversion('piraguismo_50_click_contact')">
+               50€ · Formulario
+            </a>
+          </div>
+        </section>
+      </div>
     </section>
 
-    <section class="card">
-      <h3>Condiciones</h3>
-      <p>La salida puede adaptarse en función de viento, temperatura y condiciones del embalse/río.</p>
-    </section>
-  </div>
+    <div class="grid" style="margin-top:14px;">
+      <section class="card">
+        <h3>Dificultad</h3>
+        <p><strong>Baja</strong> (iniciación). Se adapta a nivel del grupo y condiciones del agua.</p>
+      </section>
 
-  <p style="margin-top:18px;"><a href="actividades.html">← Volver a Actividades</a></p>
-</main>
+      <section class="card">
+        <h3>Duración</h3>
+        <p>
+          <strong>Opción iniciación:</strong> corta (orientativa).<br>
+          <strong>Opción completa:</strong> más larga (orientativa).<br>
+          *La duración exacta depende del grupo y del plan del día.
+        </p>
+      </section>
 
-<footer>
-  <div class="wrap">
-    <small>Sitio de demostración para fines académicos. No afiliado a empresas reales.</small>
-  </div>
-</footer>
+      <section class="card">
+        <h3>Material</h3>
+        <ul>
+          <li>Piragua y remo</li>
+          <li>Chaleco salvavidas</li>
+          <li>Briefing de seguridad</li>
+        </ul>
+        <p style="margin-top:10px;">
+          Recomendado: ropa que se pueda mojar, escarpines/calzado acuático, gorra, agua y crema solar.
+        </p>
+      </section>
+    </div>
 
-<div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
-  <div class="row">
-    <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
-    <div class="btns">
-      <button id="rejectBtn" type="button" onclick="setConsent(false)">Rechazar</button>
-      <button id="acceptBtn" type="button" onclick="setConsent(true)">Aceptar</button>
+    <div class="grid" style="margin-top:14px;">
+      <section class="card">
+        <h3>Seguridad y meteorología</h3>
+        <p>
+          En caso de viento fuerte, tormenta eléctrica u otras condiciones desfavorables,
+          se ajusta el plan o se propone alternativa priorizando seguridad.
+        </p>
+      </section>
+
+      <section class="card">
+        <h3>¿Para quién es?</h3>
+        <p>
+          Ideal para iniciación, familias y grupos. Si buscas algo más deportivo,
+          se puede plantear un enfoque más exigente según disponibilidad (demo).
+        </p>
+      </section>
+
+      <section class="card">
+        <h3>Consejo práctico</h3>
+        <p>
+          Trae una bolsa estanca pequeña para móvil/llaves y una toalla para después.
+        </p>
+      </section>
+    </div>
+
+    <p style="margin-top:18px;"><a href="actividades.html">← Volver a Actividades</a></p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>Sitio de demostración para fines académicos. No afiliado a empresas reales.</small>
+    </div>
+  </footer>
+
+  <div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
+    <div class="row">
+      <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
+      <div class="btns">
+        <button id="rejectBtn" type="button" onclick="setConsent(false)">Rechazar</button>
+        <button id="acceptBtn" type="button" onclick="setConsent(true)">Aceptar</button>
+      </div>
     </div>
   </div>
-</div>
 
 </body>
 </html>

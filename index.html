@@ -8,16 +8,18 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
 </head>
+
 <body>
 
   <nav class="topnav">
     <div class="wrap navrow">
-      <a class="brand" href="index.html">
-        <img class="brand-logo" src="assets/logo.png?v=3" alt="Aventura Sierra TFM">
+      <!-- Logo solo (si ya lo tienes así, déjalo tal cual) -->
+      <a class="brand" href="index.html" aria-label="Aventura Sierra TFM">
+        <img class="brand-logo" src="assets/logo.png?v=1" alt="Aventura Sierra TFM">
       </a>
 
       <ul class="menu">
-        <li><a href="index.html">Inicio</a></li>
+        <li><a class="active" href="index.html">Inicio</a></li>
 
         <li class="dropdown">
           <a href="actividades.html">Actividades ▾</a>
@@ -43,7 +45,7 @@
   <header class="hero">
     <div class="wrap">
       <h1>Aventura Sierra TFM</h1>
-      <p>Experiencias guiadas en naturaleza: barrancos, vías ferratas y piraguas.</p>
+      <p>Experiencias guiadas en naturaleza: barrancos, vías ferratas, espeleología, piraguas, escalada y senderismo.</p>
 
       <div class="notice">
         <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
@@ -52,74 +54,60 @@
   </header>
 
   <main class="wrap">
-    <h2>Actividades destacadas</h2>
+    <h2>Actividades</h2>
+    <p>Explora cada actividad para ver opciones, precios y puntos de conversión (WhatsApp / formulario).</p>
 
     <div class="grid">
       <section class="card">
-        <h3>Barrancos</h3>
-        <span class="chip">Agua</span><span class="chip">3–4 h</span>
+        <h3><a href="barranquismo.html">Barranquismo</a></h3>
+        <span class="chip">Agua</span><span class="chip">Aventura</span>
         <p>Descensos guiados por cañones con material técnico y briefing de seguridad.</p>
-        <div class="price-row">
-          <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20Barrancos"
-             target="_blank" rel="noopener"
-             onclick="trackConversion('home_price_click_whatsapp_barrancos')">
-             Ver precio (WhatsApp)
-          </a>
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('home_price_click_contact_barrancos')">
-             Consultar (formulario)
-          </a>
-        </div>
+        <p><a href="barranquismo.html">Ver detalles →</a></p>
       </section>
 
       <section class="card">
-        <h3>Vía ferrata</h3>
-        <span class="chip">Alturas</span><span class="chip">2–4 h</span>
-        <p>Itinerarios equipados con cable de vida, peldaños y pasos aéreos según nivel.</p>
-        <div class="price-row">
-          <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20V%C3%ADa%20ferrata"
-             target="_blank" rel="noopener"
-             onclick="trackConversion('home_price_click_whatsapp_viaferrata')">
-             Ver precio (WhatsApp)
-          </a>
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('home_price_click_contact_viaferrata')">
-             Consultar (formulario)
-          </a>
-        </div>
+        <h3><a href="via-ferrata.html">Vía ferrata</a></h3>
+        <span class="chip">Alturas</span><span class="chip">Equipado</span>
+        <p>Itinerarios con cable de vida, grapas y pasos aéreos adaptados al nivel.</p>
+        <p><a href="via-ferrata.html">Ver detalles →</a></p>
       </section>
 
       <section class="card">
-        <h3>Piragüismo</h3>
-        <span class="chip">Familiar</span><span class="chip">1–2 h</span>
-        <p>Salida en aguas calmadas ideal para grupos, iniciación y verano.</p>
-        <div class="price-row">
-          <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20Pirag%C3%BCismo"
-             target="_blank" rel="noopener"
-             onclick="trackConversion('home_price_click_whatsapp_piraguismo')">
-             Ver precio (WhatsApp)
-          </a>
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('home_price_click_contact_piraguismo')">
-             Consultar (formulario)
-          </a>
-        </div>
+        <h3><a href="espeleologia.html">Espeleología</a></h3>
+        <span class="chip">Cueva</span><span class="chip">Técnica</span>
+        <p>Progresión en cavidades con guía, iluminación y pautas de seguridad.</p>
+        <p><a href="espeleologia.html">Ver detalles →</a></p>
+      </section>
+
+      <section class="card">
+        <h3><a href="piraguismo.html">Piragüismo</a></h3>
+        <span class="chip">Familiar</span><span class="chip">Agua tranquila</span>
+        <p>Salida en aguas calmadas ideal para iniciación y verano.</p>
+        <p><a href="piraguismo.html">Ver detalles →</a></p>
+      </section>
+
+      <section class="card">
+        <h3><a href="escalada.html">Escalada</a></h3>
+        <span class="chip">Roca</span><span class="chip">Aprendizaje</span>
+        <p>Sesión guiada en roca para iniciación o mejora de técnica según nivel.</p>
+        <p><a href="escalada.html">Ver detalles →</a></p>
+      </section>
+
+      <section class="card">
+        <h3><a href="senderismo.html">Senderismo</a></h3>
+        <span class="chip">Naturaleza</span><span class="chip">Ruta</span>
+        <p>Rutas planificadas adaptadas al grupo, distancia y ritmo.</p>
+        <p><a href="senderismo.html">Ver detalles →</a></p>
       </section>
     </div>
 
-    <h2 style="margin-top:22px;">Cómo funciona</h2>
-    <div class="card">
+    <h2 style="margin-top:22px;">Cómo reservar</h2>
+    <section class="card">
       <p>
-        Explora las actividades y consulta disponibilidad por WhatsApp o mediante el formulario de contacto.
-        Este sitio sirve para evaluar navegación y optimización de conversión (demo académica).
+        En cada página de actividad verás opciones con precio. Al pulsar el precio,
+        se simula la conversión hacia WhatsApp o el formulario de contacto.
       </p>
-    </div>
+    </section>
   </main>
 
   <footer>
@@ -141,4 +129,3 @@
 
 </body>
 </html>
-    

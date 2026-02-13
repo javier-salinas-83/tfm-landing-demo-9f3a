@@ -12,14 +12,12 @@
 <body>
   <nav class="topnav">
     <div class="wrap navrow">
-      <!-- Logo -->
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Aventura Sierra TFM">
         <img class="brand-logo" src="assets/logo.png?v=1" alt="Aventura Sierra TFM">
       </a>
 
       <ul class="menu">
         <li><a href="index.html">Inicio</a></li>
-
         <li class="dropdown">
           <a href="actividades.html">Actividades ▾</a>
           <div class="dropdown-menu">
@@ -31,7 +29,6 @@
             <a href="senderismo.html">Senderismo</a>
           </div>
         </li>
-
         <li><a href="quienes-somos.html">Quiénes somos</a></li>
         <li><a href="alojamiento.html">Alojamiento</a></li>
         <li><a href="galeria.html">Galería</a></li>
@@ -44,8 +41,7 @@
   <header class="hero">
     <div class="wrap">
       <h1>Senderismo</h1>
-      <p>Rutas guiadas por Yeste y la Sierra del Segura: naturaleza, miradores y caminos con historia.</p>
-
+      <p>Rutas en la Sierra del Segura y alrededores: planificación, ritmo y recorrido adaptado al grupo (familiar o más deportivo).</p>
       <div class="notice">
         <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
       </div>
@@ -53,137 +49,39 @@
   </header>
 
   <main class="wrap">
-
     <section class="card">
-      <h2>Descripción</h2>
+      <h2>Rutas</h2>
+      <p>La duración y la dificultad se ajustan al grupo. El precio se usa como clic de conversión (WhatsApp).</p>
 
-      <p>
-        El senderismo es la forma más completa de conocer la <strong>Sierra del Segura</strong> sin prisas: bosques, agua,
-        crestas y panorámicas que cambian con cada estación. En <strong>Yeste</strong> y alrededores hay rutas para todos los niveles,
-        desde paseos interpretativos hasta recorridos más largos con desnivel.
-      </p>
+      <div class="grid" style="margin-top:14px;">
+        <section class="card">
+          <h3>Ruta familiar</h3>
+          <span class="chip">2–3 h</span><span class="chip">Dificultad: baja</span>
+          <p>Recorrido cómodo, paradas y explicación del entorno. Ideal para ir con niños o grupos tranquilos.</p>
+        </section>
 
-      <p>
-        En Aventura Sierra TFM planteamos salidas guiadas con ritmo adaptado al grupo, paradas para disfrutar del entorno
-        y orientación básica para que la experiencia sea cómoda y segura. Elegimos el itinerario en función de la meteorología,
-        el estado del terreno y el perfil del grupo.
-      </p>
+        <section class="card">
+          <h3>Ruta panorámica</h3>
+          <span class="chip">3–4 h</span><span class="chip">Dificultad: media</span>
+          <p>Más kilómetros y algo más de desnivel para disfrutar de vistas y sensación de “montaña” real.</p>
+        </section>
+
+        <section class="card">
+          <h3>Ruta deportiva</h3>
+          <span class="chip">4–6 h</span><span class="chip">Dificultad: media–alta</span>
+          <p>Ritmo sostenido y mayor exigencia física. Perfecta para grupos activos.</p>
+        </section>
+      </div>
+
+      <div style="margin-top:14px;">
+        <a class="price-btn whatsapp"
+           href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20para%20Senderismo%20en%20Sierra%20del%20Segura.%20%C2%BFPrecio%20y%20disponibilidad%3F"
+           target="_blank" rel="noopener"
+           onclick="trackConversion('senderismo_price_click_whatsapp')">
+          Consultar precio
+        </a>
+      </div>
     </section>
-
-    <h2 style="margin-top:18px;">Opciones de ruta</h2>
-
-    <div class="grid" style="margin-top:14px;">
-      <!-- Opción 1 -->
-      <section class="card">
-        <h3>Ruta Bosque y Río (iniciación)</h3>
-        <span class="chip">Yeste · Sierra del Segura</span>
-        <span class="chip">Duración: 2–3 h</span>
-        <span class="chip">Dificultad: baja</span>
-
-        <p>
-          Paseo guiado por pistas y senderos sencillos, con tramos sombreados y paradas en puntos de interés natural.
-          Ideal para familias o para empezar a caminar en montaña.
-        </p>
-
-        <div class="price-row">
-          <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20Senderismo%20(Ruta%20Bosque%20y%20R%C3%ADo)%20en%20Yeste%20-%2055%E2%82%AC"
-             target="_blank" rel="noopener"
-             onclick="trackConversion('senderismo_price_click_whatsapp_ruta1')">
-             55€ · Reservar por WhatsApp
-          </a>
-
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('senderismo_price_click_contact_ruta1')">
-             55€ · Consultar por formulario
-          </a>
-        </div>
-      </section>
-
-      <!-- Opción 2 -->
-      <section class="card">
-        <h3>Ruta Miradores de la Sierra (nivel medio)</h3>
-        <span class="chip">Yeste · Sierra del Segura</span>
-        <span class="chip">Duración: 3–4,5 h</span>
-        <span class="chip">Dificultad: media</span>
-
-        <p>
-          Itinerario con más desnivel y mejores vistas. Caminos y sendas que alternan bosque y zonas abiertas,
-          con paradas en miradores naturales para fotografía y descanso.
-        </p>
-
-        <div class="price-row">
-          <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20Senderismo%20(Ruta%20Miradores%20de%20la%20Sierra)%20en%20Yeste%20-%2055%E2%82%AC"
-             target="_blank" rel="noopener"
-             onclick="trackConversion('senderismo_price_click_whatsapp_ruta2')">
-             55€ · Reservar por WhatsApp
-          </a>
-
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('senderismo_price_click_contact_ruta2')">
-             55€ · Consultar por formulario
-          </a>
-        </div>
-      </section>
-
-      <!-- Opción 3 -->
-      <section class="card">
-        <h3>Ruta Crestas y Panorámicas (avanzada)</h3>
-        <span class="chip">Yeste · Sierra del Segura</span>
-        <span class="chip">Duración: 4,5–6 h</span>
-        <span class="chip">Dificultad: media–alta</span>
-
-        <p>
-          Recorrido más exigente por terreno de montaña, con tramos de senda estrecha y subida continuada.
-          Pensada para quienes buscan una jornada más intensa y vistas amplias de la sierra.
-        </p>
-
-        <div class="price-row">
-          <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20info%20sobre%20Senderismo%20(Ruta%20Crestas%20y%20Panor%C3%A1micas)%20en%20Yeste%20-%2055%E2%82%AC"
-             target="_blank" rel="noopener"
-             onclick="trackConversion('senderismo_price_click_whatsapp_ruta3')">
-             55€ · Reservar por WhatsApp
-          </a>
-
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('senderismo_price_click_contact_ruta3')">
-             55€ · Consultar por formulario
-          </a>
-        </div>
-      </section>
-    </div>
-
-    <div class="grid" style="margin-top:14px;">
-      <section class="card">
-        <h3>Qué llevar</h3>
-        <ul>
-          <li>Calzado cómodo con suela</li>
-          <li>Agua (mínimo 1L por persona)</li>
-          <li>Ropa por capas y cortavientos según época</li>
-          <li>Gorra/crema solar</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h3>Seguridad y meteorología</h3>
-        <p>
-          Si hay tormenta eléctrica, lluvia intensa, viento fuerte o condiciones que aumenten el riesgo,
-          la salida puede ajustarse (cambio de horario, ruta alternativa o reprogramación) priorizando seguridad.
-        </p>
-      </section>
-
-      <section class="card">
-        <h3>Nivel y adaptación</h3>
-        <p>
-          Antes de confirmar, revisamos experiencia, forma física y preferencias del grupo para proponer la opción más adecuada.
-        </p>
-      </section>
-    </div>
 
     <p style="margin-top:18px;"><a href="actividades.html">← Volver a Actividades</a></p>
   </main>
@@ -194,7 +92,6 @@
     </div>
   </footer>
 
-  <!-- Banner de consentimiento (Clarity solo carga si aceptan) -->
   <div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
     <div class="row">
       <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
@@ -204,6 +101,5 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>

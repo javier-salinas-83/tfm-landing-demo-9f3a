@@ -183,3 +183,41 @@ header.hero p{margin:0}
   .brand-logo{height:72px}
   .menu{gap:12px}
 }
+/* FIX: dropdown que no se cierre al mover el ratón */
+.topnav .dropdown { 
+  position: relative;
+}
+
+/* importante: abrir por hover del LI, no solo del enlace */
+.topnav .dropdown:hover .dropdown-menu,
+.topnav .dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+/* el panel: deja un pequeño "colchón" para que no se pierda el hover */
+.topnav .dropdown-menu {
+  display: none;              /* por defecto oculto */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  padding-top: 8px;           /* colchón anti-gap */
+  margin-top: 0;              /* evita huecos */
+  z-index: 9999;
+}
+
+/* la caja interior (los links) para que el padding-top no sea zona muerta */
+.topnav .dropdown-menu a {
+  display: block;
+  white-space: nowrap;
+}
+
+/* opcional: añade una “zona puente” invisible justo encima del menú */
+.topnav .dropdown-menu::before{
+  content:"";
+  position:absolute;
+  top:-8px;
+  left:0;
+  right:0;
+  height:8px;
+}

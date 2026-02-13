@@ -10,42 +10,115 @@
 </head>
 <body>
 
-<nav class="topnav">
-  <div class="wrap navrow">
-    <a class="brand" href="index.html">
-        <img class="brand-logo" src="assets/logo.png?v=3" alt="Aventura Sierra TFM">
-    </a>
-    <ul class="menu">
-      <li><a href="index.html">Inicio</a></li>
-      <li class="dropdown">
-        <a href="actividades.html">Actividades ▾</a>
-        <div class="dropdown-menu">
-          <a href="barranquismo.html">Barranquismo</a>
-          <a href="via-ferrata.html">Vía ferrata</a>
-          <a href="espeleologia.html">Espeleología</a>
-          <a href="piraguismo.html">Piragüismo</a>
-          <a href="escalada.html">Escalada</a>
-          <a href="senderismo.html">Senderismo</a>
-        </div>
-      </li>
-      <li><a href="quienes-somos.html">Quiénes somos</a></li>
-      <li><a href="alojamiento.html">Alojamiento</a></li>
-      <li><a href="galeria.html">Galería</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
-  </div>
-</nav>
+  <nav class="topnav">
+    <div class="wrap navrow">
+      <a class="brand" href="index.html" aria-label="Inicio">
+        <!-- Si usas logo en /assets/logo.png -->
+        <img class="brand-logo" src="assets/logo.png?v=1" alt="Aventura Sierra TFM">
+      </a>
 
-<header class="hero">
-  <div class="wrap">
-    <h1>Quiénes somos</h1>
-    <p>Texto orientativo para pruebas de navegación y estructura de contenido.</p>
-    <div class="notice">
-      <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+
+        <li class="dropdown">
+          <a href="actividades.html">Actividades ▾</a>
+          <div class="dropdown-menu">
+            <a href="barranquismo.html">Barranquismo</a>
+            <a href="via-ferrata.html">Vía ferrata</a>
+            <a href="espeleologia.html">Espeleología</a>
+            <a href="piraguismo.html">Piragüismo</a>
+            <a href="escalada.html">Escalada</a>
+            <a href="senderismo.html">Senderismo</a>
+          </div>
+        </li>
+
+        <li><a class="active" href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="alojamiento.html">Alojamiento</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Quiénes somos</h1>
+      <p>Un equipo con ganas de montaña, agua y roca. Experiencias guiadas en la Sierra del Segura (demo).</p>
+
+      <div class="notice">
+        <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Somos Aventura Sierra TFM</h2>
+      <p>
+        En <strong>Aventura Sierra TFM</strong> vivimos la montaña de verdad: agua, roca, altura y rutas con buena energía.
+        Organizamos experiencias guiadas en la <strong>Sierra del Segura</strong> y alrededores para que disfrutes,
+        aprendas y te lleves un planazo que recordar.
+      </p>
+      <p>
+        No venimos a vender humo: venimos a que lo pases bien y vuelvas con ganas de repetir.
+        Adaptamos la actividad al nivel del grupo, explicamos lo necesario para ir con confianza
+        y cuidamos los detalles para que la experiencia sea redonda.
+      </p>
+      <p>
+        Si te apetece probar <strong>barranquismo, vía ferrata, piragüismo, escalada, senderismo o espeleología</strong>,
+        escríbenos y te recomendamos la opción que encaje contigo. Tú trae las ganas. Nosotros ponemos el plan.
+      </p>
+    </section>
+
+    <div class="grid" style="margin-top:14px;">
+      <section class="card">
+        <h3>Nuestra forma de trabajar</h3>
+        <ul>
+          <li>Briefing claro antes de empezar.</li>
+          <li>Ritmo y dificultad adaptados al grupo.</li>
+          <li>Seguridad y buen rollo, siempre.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Para quién es</h3>
+        <ul>
+          <li>Grupos de amigos, parejas y familias.</li>
+          <li>Iniciación y niveles intermedios.</li>
+          <li>Planes de fin de semana y escapadas.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>¿Empezamos?</h3>
+        <p>
+          Mira las actividades y elige la que más te motive.  
+          Cuando quieras, lo cerramos por WhatsApp.
+        </p>
+        <p><a href="actividades.html">Ver actividades →</a></p>
+      </section>
+    </div>
+
+    <p style="margin-top:18px;"><a href="index.html">← Volver a inicio</a></p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>Sitio de demostración para fines académicos. No afiliado a empresas reales.</small>
+    </div>
+  </footer>
+
+  <!-- Banner de consentimiento (Clarity solo carga si aceptan) -->
+  <div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
+    <div class="row">
+      <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
+      <div class="btns">
+        <button id="rejectBtn" type="button" onclick="setConsent(false)">Rechazar</button>
+        <button id="acceptBtn" type="button" onclick="setConsent(true)">Aceptar</button>
+      </div>
     </div>
   </div>
-</header>
 
-<main class
-::contentReference[oaicite:0]{index=0}
+</body>
+</html>

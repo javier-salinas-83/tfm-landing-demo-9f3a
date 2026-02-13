@@ -10,18 +10,14 @@
 </head>
 
 <body>
-
-  <!-- NAVBAR (igual que el resto de páginas) -->
   <nav class="topnav">
     <div class="wrap navrow">
-      <a class="brand" href="index.html">
-        <!-- Si ya dejaste solo logo, mantén esto tal cual lo tengas en el resto -->
+      <a class="brand" href="index.html" aria-label="Aventura Sierra TFM">
         <img class="brand-logo" src="assets/logo.png?v=1" alt="Aventura Sierra TFM">
       </a>
 
       <ul class="menu">
         <li><a href="index.html">Inicio</a></li>
-
         <li class="dropdown">
           <a href="actividades.html">Actividades ▾</a>
           <div class="dropdown-menu">
@@ -33,7 +29,6 @@
             <a href="senderismo.html">Senderismo</a>
           </div>
         </li>
-
         <li><a href="quienes-somos.html">Quiénes somos</a></li>
         <li><a href="alojamiento.html">Alojamiento</a></li>
         <li><a href="galeria.html">Galería</a></li>
@@ -43,11 +38,13 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-      <h1>Espeleología en la Cueva de los Chorros</h1>
-      <p>Riópar (Albacete) · Tres propuestas por nivel para vivir la cueva con seguridad y guía.</p>
+      <h1>Espeleología</h1>
+      <p>
+        Descubre cavidades y formaciones subterráneas en la zona de Riópar / Los Chorros.
+        Una experiencia guiada que combina aventura, aprendizaje y máxima seguridad.
+      </p>
 
       <div class="notice">
         <strong>Aviso:</strong> Sitio de demostración académica. No afiliado a empresas reales. No introduzcas datos personales reales.
@@ -55,124 +52,89 @@
     </div>
   </header>
 
-  <!-- CONTENIDO -->
   <main class="wrap">
     <section class="card">
       <h2>Descripción</h2>
       <p>
-        La Cueva de los Chorros, en el entorno de Riópar (Albacete), es un escenario espectacular para iniciarse o profundizar en la espeleología.
-        Planteamos experiencias guiadas con itinerarios progresivos: desde una entrada “cómoda” para explorar galerías y formaciones,
-        hasta recorridos más completos con pasos técnicos.
+        La espeleología permite explorar el mundo subterráneo con guía: galerías, salas amplias, pasos estrechos y
+        formaciones naturales. En función del grupo, la ruta puede ser de iniciación (muy accesible) o incluir
+        tramos más técnicos con progresión guiada.
       </p>
       <p>
-        Para que la experiencia sea segura y disfrutable, el guía adapta el ritmo y las decisiones a la composición del grupo
-        (condición física, experiencia previa y sensaciones durante la actividad). Si buscas una primera toma de contacto, empieza por la opción 1.
-        Si ya has hecho alguna actividad técnica, las opciones 2 y 3 te darán un plus de aventura.
+        Trabajamos con criterios de seguridad y planificación: se revisa el nivel del grupo, la meteorología y
+        las condiciones de la cavidad antes de decidir el itinerario final. El objetivo es que disfrutes de la
+        experiencia con confianza y buen ritmo.
       </p>
     </section>
 
-    <h2 style="margin-top:22px;">Rutas disponibles</h2>
+    <h2 style="margin-top:22px;">Opciones de ruta</h2>
 
-    <div class="grid">
-      <!-- Opción 1 -->
+    <div class="grid" style="margin-top:14px;">
       <section class="card">
-        <h3>1) Galerías de Iniciación</h3>
-        <span class="chip">Dificultad: Media</span>
-        <span class="chip">Duración: 3–4 h</span>
+        <h3>Ruta de iniciación (Riópar)</h3>
+        <span class="chip">Duración: 2 h</span><span class="chip">Dificultad: baja</span>
         <p>
-          Entrada guiada para conocer las primeras salas y corredores, con paradas para observar formaciones y explicar
-          cómo se progresa en una cavidad. Ideal para grupos grandes o para quienes quieren probar sin pasos exigentes.
+          Recorrido ideal para primera toma de contacto. Galerías cómodas y explicación del entorno subterráneo
+          (formaciones, orientación y normas básicas).
         </p>
-
-        <div class="meta">
-          <div><strong>Qué incluye (orientativo):</strong> casco + arnés y explicación de seguridad.</div>
-          <div><strong>Qué llevar:</strong> zapatillas/botas, ropa deportiva, calcetines de recambio, agua y algo de comida.</div>
-          <div><strong>Zona:</strong> Cueva de los Chorros (Riópar, Albacete).</div>
-        </div>
-
-        <div class="price-row">
-          <!-- El precio (etiqueta) lleva a WhatsApp -->
+        <div style="margin-top:12px;">
           <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Espeleolog%C3%ADa%20-%20Galer%C3%ADas%20de%20Iniciaci%C3%B3n%20(40%E2%82%AC)%20en%20Cueva%20de%20los%20Chorros%2C%20Ri%C3%B3par"
+             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Espeleolog%C3%ADa%20(Ruta%20de%20iniciaci%C3%B3n%20-%20Ri%C3%B3par).%20%C2%BFPrecio%20y%20disponibilidad%3F"
              target="_blank" rel="noopener"
-             onclick="trackConversion('espeleologia_price_40_whatsapp')">40€</a>
-
-          <!-- Alternativa: formulario -->
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('espeleologia_price_40_contact')">Consultar (formulario)</a>
+             onclick="trackConversion('espeleologia_price_click_whatsapp_iniciacion')">
+            Ver precio
+          </a>
         </div>
       </section>
 
-      <!-- Opción 2 -->
       <section class="card">
-        <h3>2) Travesía Fósil–Acuática</h3>
-        <span class="chip">Dificultad: Media–alta</span>
-        <span class="chip">Duración: 5–6 h</span>
+        <h3>Ruta intermedia (Los Chorros)</h3>
+        <span class="chip">Duración: 3 h</span><span class="chip">Dificultad: media</span>
         <p>
-          Un recorrido más completo para “sentir” la cueva: progresión por tramos variados y secciones donde la cavidad
-          se vuelve más dinámica. Es la opción perfecta si quieres una experiencia intensa sin ir al máximo.
+          Más recorrido y variedad de pasos. Se incorpora progresión más sostenida y tramos donde la técnica y el
+          ritmo del grupo marcan la experiencia.
         </p>
-
-        <div class="meta">
-          <div><strong>Perfil recomendado:</strong> buena forma física y ganas de actividad técnica.</div>
-          <div><strong>Qué llevar:</strong> calzado cerrado, ropa deportiva, bañador y prenda interior deportiva cómoda.</div>
-          <div><strong>Zona:</strong> Cueva de los Chorros (Riópar, Albacete).</div>
-        </div>
-
-        <div class="price-row">
+        <div style="margin-top:12px;">
           <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Espeleolog%C3%ADa%20-%20Traves%C3%ADa%20F%C3%B3sil-Acu%C3%A1tica%20(75%E2%82%AC)%20en%20Cueva%20de%20los%20Chorros%2C%20Ri%C3%B3par"
+             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Espeleolog%C3%ADa%20(Ruta%20intermedia%20-%20Los%20Chorros).%20%C2%BFPrecio%20y%20disponibilidad%3F"
              target="_blank" rel="noopener"
-             onclick="trackConversion('espeleologia_price_75_whatsapp')">75€</a>
-
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('espeleologia_price_75_contact')">Consultar (formulario)</a>
+             onclick="trackConversion('espeleologia_price_click_whatsapp_intermedia')">
+            Ver precio
+          </a>
         </div>
       </section>
 
-      <!-- Opción 3 -->
       <section class="card">
-        <h3>3) Ruta Integral del Sector</h3>
-        <span class="chip">Dificultad: Alta</span>
-        <span class="chip">Duración: 6–8 h</span>
+        <h3>Ruta avanzada (entorno Sierra del Segura)</h3>
+        <span class="chip">Duración: 4–5 h</span><span class="chip">Dificultad: media–alta</span>
         <p>
-          La opción más larga y exigente. Se plantea para quienes buscan una jornada potente, con más tiempo dentro de la cavidad
-          y un itinerario amplio que permite ver zonas menos accesibles. Se recomienda experiencia previa o, como mínimo,
-          estar cómodo con actividad intensa.
+          Para quienes buscan un reto mayor: más duración, pasos técnicos guiados y progresión más exigente.
+          Se recomienda buena condición física y experiencia previa en actividades de aventura.
         </p>
-
-        <div class="meta">
-          <div><strong>Duración en cueva:</strong> orientativa, según grupo y decisiones de guía.</div>
-          <div><strong>Qué llevar:</strong> calzado cerrado, ropa deportiva, bañador y prenda interior deportiva cómoda.</div>
-          <div><strong>Zona:</strong> Cueva de los Chorros (Riópar, Albacete).</div>
-        </div>
-
-        <div class="price-row">
+        <div style="margin-top:12px;">
           <a class="price-btn whatsapp"
-             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Espeleolog%C3%ADa%20-%20Ruta%20Integral%20del%20Sector%20(100%E2%82%AC)%20en%20Cueva%20de%20los%20Chorros%2C%20Ri%C3%B3par"
+             href="https://wa.me/34000000000?text=Hola%2C%20quiero%20reservar%20Espeleolog%C3%ADa%20(Ruta%20avanzada%20-%20Sierra%20del%20Segura).%20%C2%BFPrecio%20y%20disponibilidad%3F"
              target="_blank" rel="noopener"
-             onclick="trackConversion('espeleologia_price_100_whatsapp')">100€</a>
-
-          <a class="price-btn contact"
-             href="contacto.html#contacto"
-             onclick="trackConversion('espeleologia_price_100_contact')">Consultar (formulario)</a>
+             onclick="trackConversion('espeleologia_price_click_whatsapp_avanzada')">
+            Ver precio
+          </a>
         </div>
       </section>
     </div>
 
-    <h2 style="margin-top:22px;">Recomendaciones</h2>
-    <div class="card">
-      <ul style="margin:0; padding-left:18px;">
-        <li>Trae agua y algo de energía (barrita/fruta).</li>
-        <li>Evita objetos sueltos: mejor mochila pequeña y manos libres.</li>
-        <li>Si hay lluvias recientes o previsión adversa, el guía puede ajustar horario o ruta por seguridad.</li>
+    <h2 style="margin-top:22px;">Qué llevar</h2>
+    <section class="card">
+      <ul>
+        <li>Ropa cómoda que pueda ensuciarse</li>
+        <li>Calzado con buena suela</li>
+        <li>Agua</li>
       </ul>
-      <p style="margin-top:12px;">
-        <a href="actividades.html">← Volver a Actividades</a>
+      <p style="margin-top:10px;">
+        La actividad se adapta a las condiciones del grupo y de la cavidad (demo).
       </p>
-    </div>
+    </section>
+
+    <p style="margin-top:18px;"><a href="actividades.html">← Volver a Actividades</a></p>
   </main>
 
   <footer>
@@ -181,7 +143,6 @@
     </div>
   </footer>
 
-  <!-- Banner consentimiento (Clarity solo carga si aceptan) -->
   <div id="consentBanner" role="dialog" aria-live="polite" aria-label="Consentimiento de analítica">
     <div class="row">
       <p>Este sitio usa analítica de navegación (Microsoft Clarity) para fines académicos. ¿Aceptas activar la analítica?</p>
@@ -191,6 +152,5 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>

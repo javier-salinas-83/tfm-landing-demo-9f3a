@@ -41,3 +41,36 @@ function trackConversion(name){
     }
   }catch(e){}
 }
+// --- Validación hCaptcha en formulario de contacto (modo automático) ---
+window.addEventListener("load", () => {
+  const form = document.getElementById("contactForm");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // hCaptcha automático deja el token aquí:
+    const tokenField = form.querySelector('textarea[name="h-captcha-response"]');
+    const token = tokenField ? tokenField.value.trim() : "";
+
+    if (!token) {
+      alert("Por favor, completa el captcha antes de enviar.");
+      return;
+    }
+
+    // OK: ahora sí contamos la conversión
+    if (typeof window.trackConversion === "function") {
+      window.trackConversion("contact_form_submit");
+    }
+
+    alert("Demo: formulario validado con captcha (no envía datos).");
+
+    // (Opcional) resetear captcha para permitir re-enviar
+    if (window.hcaptcha && typeof window.hcaptcha.reset === "function") {
+      window.hcaptcha.reset();
+    }
+
+    // (Opcional) limpiar campos
+    // form.reset();
+  });
+});

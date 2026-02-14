@@ -62,7 +62,7 @@
       <h2>Formulario</h2>
       <p>Campos orientativos para pruebas de navegación.</p>
 
-      <form onsubmit="event.preventDefault(); trackConversion('contact_form_submit'); alert('Demo: formulario no envía datos.');">
+      <form id="contactForm">
         <label>Actividad de interés<br>
           <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="actividad" placeholder="Ej: Vía ferrata" />
         </label><br><br>
@@ -81,7 +81,8 @@
         
         <div class="h-captcha" data-sitekey="199c0150-0526-42a8-9176-f63e5904efa6"></div>
         <br>
-        
+        <div id="hcaptcha"></div>
+        <br>
         <button class="price-btn contact" type="submit">Enviar (demo)</button>
         <a class="price-btn whatsapp"
            href="https://wa.me/34000000000?text=Hola%2C%20quiero%20informaci%C3%B3n"

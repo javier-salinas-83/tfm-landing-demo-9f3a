@@ -221,7 +221,7 @@ header.hero p{margin:0}
   right:0;
   height:8px;
 }
-/* --- Video YouTube responsive (galería + páginas de actividad) --- */
+/* --- Vídeo responsive (galería + páginas de actividad) --- */
 .video-embed{
   position:relative;
   width:100%;
@@ -230,12 +230,24 @@ header.hero p{margin:0}
   overflow:hidden;
   background:#000;
 }
+
+/* YouTube (si aún queda algún iframe en alguna página) */
 .video-embed iframe{
   position:absolute;
   inset:0;
   width:100%;
   height:100%;
   border:0;
+}
+
+/* VÍDEO local (MP4 en /assets) */
+.video-embed video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+  object-fit:cover; /* rellena el 16:9 sin deformar */
 }
 
 /* --- Imágenes clicables en cards (index + actividades si las usas) --- */

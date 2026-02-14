@@ -24,9 +24,20 @@ window.addEventListener("load", () => {
 });
 
 function trackConversion(name){
+  // 1) Clarity (si está cargado y el usuario aceptó)
   try{
     if(typeof clarity === "function"){
       clarity("event", name);
+    }
+  }catch(e){}
+
+  // 2) Google Analytics (si gtag está disponible)
+  try{
+    if(typeof gtag === "function"){
+      gtag("event", name, {
+        event_category: "conversion",
+        event_label: name
+      });
     }
   }catch(e){}
 }

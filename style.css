@@ -258,3 +258,12 @@ header.hero p{margin:0}
   border-radius:12px;
   display:block;
 }
+/* Título tipo rótulo en cards (index) */
+.card-title{
+  margin:0 0 10px;
+  font-weight:800;
+  letter-spacing:.2px;
+  font-size:20px; /* ajusta si quieres más grande */
+  text-transform:uppercase; /* opcional: quita si no te gusta */
+  color:#0f6a3a; /* verde */
+}

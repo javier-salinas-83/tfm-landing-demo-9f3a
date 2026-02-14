@@ -16,6 +16,7 @@
   <meta name="robots" content="noindex, nofollow" />
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body>
 
@@ -77,7 +78,10 @@
         <label>Mensaje (demo)<br>
           <textarea style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="mensaje" rows="4" placeholder="Consulta..."></textarea>
         </label><br><br>
-
+        
+        <div class="h-captcha" data-sitekey="199c0150-0526-42a8-9176-f63e5904efa6"></div>
+        <br>
+        
         <button class="price-btn contact" type="submit">Enviar (demo)</button>
         <a class="price-btn whatsapp"
            href="https://wa.me/34000000000?text=Hola%2C%20quiero%20informaci%C3%B3n"

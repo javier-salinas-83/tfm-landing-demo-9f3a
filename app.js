@@ -30,13 +30,3 @@ function trackConversion(name){
     }
   }catch(e){}
 }
-function trackConversion(eventName){
-  // GA4
-  if (typeof gtag === "function") {
-    gtag("event", eventName);
-  }
-  // (opcional) Clarity
-  if (typeof clarity === "function") {
-    clarity("event", eventName);
-  }
-}

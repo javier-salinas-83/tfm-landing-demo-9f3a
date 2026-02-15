@@ -8,16 +8,21 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-4HTG9DLN1W');
   </script>
+
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contacto — Aventura Sierra TFM</title>
+  <title>Reserva — Aventura Sierra TFM</title>
   <meta name="robots" content="noindex, nofollow" />
   <link rel="stylesheet" href="style.css">
+
+  <!-- JS del sitio -->
   <script defer src="app.js"></script>
+
+  <!-- hCaptcha -->
   <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
+
 <body>
 
   <nav class="topnav">
@@ -41,7 +46,7 @@
         <li><a href="quienes-somos.html">Quiénes somos</a></li>
         <li><a href="alojamiento.html">Alojamiento</a></li>
         <li><a href="galeria.html">Galería</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html">Reserva</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </div>
@@ -49,45 +54,97 @@
 
   <header class="hero">
     <div class="wrap">
-      <h1>Contacto (demo)</h1>
-      <p>Canal de consulta para simular la conversión (WhatsApp o formulario).</p>
-      <div class="notice">
-        <strong>Este formulario es solo demostración.</strong> No envíes datos personales reales.
-      </div>
+      <h1>Reserva</h1>
+      <p>Solicita una pre-reserva y te contactaremos para confirmar disponibilidad y detalles.</p>
     </div>
   </header>
 
   <main class="wrap">
     <section id="contacto" class="card">
-      <h2>Formulario</h2>
-      <p>Campos orientativos para pruebas de navegación.</p>
+      <h2>Formulario de pre-reserva</h2>
+      <p>Completa los datos básicos para que podamos organizar tu actividad.</p>
 
       <form id="contactForm">
-        <label>Actividad de interés<br>
-          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="actividad" placeholder="Ej: Vía ferrata" />
+
+        <label>Actividad<br>
+          <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="actividad" required>
+            <option value="">Selecciona…</option>
+            <option>Vía ferrata</option>
+            <option>Barranquismo</option>
+            <option>Espeleología</option>
+            <option>Piragüismo</option>
+            <option>Escalada</option>
+            <option>Senderismo</option>
+          </select>
         </label><br><br>
 
-        <label>Fecha aproximada<br>
-          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="fecha" placeholder="Ej: 15/07" />
+        <label>Fecha preferida<br>
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+                 type="date" name="fechaPreferida" required />
+        </label><br><br>
+
+        <label>Franja horaria<br>
+          <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="franja" required>
+            <option value="">Selecciona…</option>
+            <option value="mañana">Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="indiferente">Indiferente</option>
+          </select>
         </label><br><br>
 
         <label>Nº de personas<br>
-          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="personas" placeholder="Ej: 4" />
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+                 type="number" min="1" max="30" name="personas" required />
         </label><br><br>
 
-        <label>Mensaje (demo)<br>
-          <textarea style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="mensaje" rows="4" placeholder="Consulta..."></textarea>
+        <label>Nivel / experiencia<br>
+          <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="nivel">
+            <option value="">Selecciona…</option>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+          </select>
         </label><br><br>
-        
+
+        <label>Nombre<br>
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+                 name="nombre" autocomplete="name" required />
+        </label><br><br>
+
+        <label>Teléfono<br>
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+                 name="telefono" autocomplete="tel" />
+        </label><br><br>
+
+        <label>Email<br>
+          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+                 type="email" name="email" autocomplete="email" />
+        </label><br><br>
+
+        <label>Preferencia de contacto<br>
+          <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="contactoPreferido">
+            <option value="">Selecciona…</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="llamada">Llamada</option>
+            <option value="email">Email</option>
+          </select>
+        </label><br><br>
+
+        <label>Observaciones<br>
+          <textarea style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+                    name="observaciones" rows="4"
+                    placeholder="Edades, alergias, dudas, si necesitas alquiler de material, etc."></textarea>
+        </label><br><br>
+
+        <label style="display:flex;gap:10px;align-items:flex-start">
+          <input type="checkbox" name="consentimiento" required />
+          <span>Acepto que me contactéis para gestionar esta reserva.</span>
+        </label><br><br>
+
         <div class="h-captcha" data-sitekey="199c0150-0526-42a8-9176-f63e5904efa6"></div>
         <br>
-        <div id="hcaptcha"></div>
-        <br>
-        <button class="price-btn contact" type="submit">Enviar (demo)</button>
-        <a class="price-btn whatsapp"
-           href="https://wa.me/34000000000?text=Hola%2C%20quiero%20informaci%C3%B3n"
-           target="_blank" rel="noopener"
-           onclick="trackConversion('contact_click_whatsapp')">WhatsApp (demo)</a>
+
+        <button class="price-btn contact" type="submit">Reservar</button>
       </form>
     </section>
   </main>

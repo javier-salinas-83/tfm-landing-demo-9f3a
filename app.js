@@ -1,4 +1,4 @@
-const CLARITY_ID = "vfp3qzaoit"; // DEV (cámbialo por el ID del proyecto TFM cuando toque)
+const CLARITY_ID = "vbu06v2068"; // DEV (cámbialo por el ID del proyecto TFM cuando toque)
 
 function loadClarity(){
   (function(c,l,a,r,i,t,y){

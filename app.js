@@ -72,7 +72,7 @@ window.addEventListener("load", () => {
   if (!form) return;
 
   // ⬇️ Pega aquí la URL de tu Flow (When an HTTP request is received)
-  const FLOW_URL = "https://default281412e02f0e4e2b87901e1d44ea0a.80.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/a3b28c53d36e47a597f6ec30ed1d1c3a/triggers/manual/paths/invoke?api-version=1";
+  const FLOW_URL = "https://default281412e02f0e4e2b87901e1d44ea0a.80.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/a3b28c53d36e47a597f6ec30ed1d1c3a/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=5T5R9C2eCVbCHyy5s31zQJEISJyxpFuWWt2bwUwn4N8";
 
   // helper: convertir FormData a objeto
   const formToObject = (f) => {

@@ -102,7 +102,20 @@ window.addEventListener("load", () => {
       alert("No se ha podido enviar. Revisa el formulario e inténtalo de nuevo.");
       return;
     }
-
+    // Banner de error si el formulario no es válido
+    const banner = document.getElementById("formError");
+    if (!form.checkValidity()) {
+      if (banner) {
+        banner.hidden = false;
+        banner.textContent = "Faltan campos obligatorios. Revisa los campos marcados con *.";
+      }
+      // Esto hace que el navegador marque el primer campo inválido
+      form.reportValidity();
+      return;
+    } else {
+      if (banner) banner.hidden = true;
+    }
+    
     // 1) Leer token de hCaptcha (hCaptcha lo escribe aquí al completarlo)
     const tokenField = form.querySelector('textarea[name="h-captcha-response"]');
     const token = tokenField ? tokenField.value.trim() : "";

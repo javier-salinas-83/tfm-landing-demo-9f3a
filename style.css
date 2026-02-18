@@ -287,7 +287,7 @@ header.hero p{margin:0}
 }
 
 /* Asterisco en labels requeridos */
-.req-label::after{
+label.req .req-label::after{
   content:" *";
   color:#d33;
   font-weight:700;

@@ -93,6 +93,15 @@ window.addEventListener("load", () => {
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    // 1) Honeypot anti-bot (si está relleno, es bot)
+    const hp = document.getElementById("website");
+    const hpValue = (hp?.value || "").trim();
+
+    if (hpValue.length > 0) {
+      // No llames al Flow, ni al hCaptcha. Corta aquí.
+      alert("No se ha podido enviar. Revisa el formulario e inténtalo de nuevo.");
+      return;
+    }
 
     // 1) Leer token de hCaptcha (hCaptcha lo escribe aquí al completarlo)
     const tokenField = form.querySelector('textarea[name="h-captcha-response"]');

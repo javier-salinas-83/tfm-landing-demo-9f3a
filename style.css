@@ -267,3 +267,12 @@ header.hero p{margin:0}
   text-transform:uppercase; /* opcional: quita si no te gusta */
   color:#0f6a3a; /* verde */
 }
+/* Honeypot: oculto para humanos, visible para bots */
+.hp-field {
+  position: absolute !important;
+  left: -10000px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}

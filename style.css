@@ -287,10 +287,10 @@ header.hero p{margin:0}
 }
 
 /* Asterisco en labels requeridos */
-.req::after{
-  content: " *";
-  color: #d33;
-  font-weight: 700;
+.req-label::after{
+  content:" *";
+  color:#d33;
+  font-weight:700;
 }
 
 /* Leyenda */

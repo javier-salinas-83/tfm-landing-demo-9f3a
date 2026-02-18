@@ -60,107 +60,114 @@
   </header>
 
   <main class="wrap">
-    <section id="contacto" class="card">
-      <h2>Formulario de pre-reserva</h2>
-      <p>Completa los datos básicos para que podamos organizar tu actividad.</p>
+  <section id="contacto" class="card">
+    <h2>Formulario de pre-reserva</h2>
+    <p>Completa los datos básicos para que podamos organizar tu actividad.</p>
 
-      <form id="contactForm">
+    <form id="contactForm" novalidate>
 
-        <label>Actividad<br>
-          <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="actividad" required>
-            <option value="">Selecciona…</option>
-            <option>Vía ferrata</option>
-            <option>Barranquismo</option>
-            <option>Espeleología</option>
-            <option>Piragüismo</option>
-            <option>Escalada</option>
-            <option>Senderismo</option>
-          </select>
-        </label><br><br>
+      <!-- Banner de error (se muestra si faltan obligatorios) -->
+      <div id="formError" class="form-banner" role="alert" aria-live="polite" hidden>
+        Faltan campos obligatorios. Revisa los campos marcados con *.
+      </div>
 
-        <label>Fecha preferida<br>
-          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
-                 type="date" name="fechaPreferida" required />
-        </label><br><br>
+      <label class="req">Actividad<br>
+        <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="actividad" required>
+          <option value="" disabled selected>Selecciona…</option>
+          <option value="Vía ferrata">Vía ferrata</option>
+          <option value="Barranquismo">Barranquismo</option>
+          <option value="Espeleología">Espeleología</option>
+          <option value="Piragüismo">Piragüismo</option>
+          <option value="Escalada">Escalada</option>
+          <option value="Senderismo">Senderismo</option>
+        </select>
+      </label><br><br>
 
-        <label>Franja horaria<br>
-          <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="franja" required>
-            <option value="">Selecciona…</option>
-            <option value="mañana">Mañana</option>
-            <option value="tarde">Tarde</option>
-            <option value="indiferente">Indiferente</option>
-          </select>
-        </label><br><br>
+      <label class="req">Fecha preferida<br>
+        <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+               type="date" name="fechaPreferida" required />
+      </label><br><br>
 
-        <label>Nº de personas<br>
-          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
-                 type="number" min="1" max="30" name="personas" required />
-        </label><br><br>
+      <label class="req">Franja horaria<br>
+        <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="franja" required>
+          <option value="" disabled selected>Selecciona…</option>
+          <option value="mañana">Mañana</option>
+          <option value="tarde">Tarde</option>
+          <option value="indiferente">Indiferente</option>
+        </select>
+      </label><br><br>
 
-        <label>Nivel / experiencia<br>
-          <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="nivel">
-            <option value="">Selecciona…</option>
-            <option value="principiante">Principiante</option>
-            <option value="intermedio">Intermedio</option>
-            <option value="avanzado">Avanzado</option>
-          </select>
-        </label><br><br>
+      <label class="req">Nº de personas<br>
+        <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+               type="number" min="1" max="30" name="personas" required />
+      </label><br><br>
 
-        <label>Nombre<br>
-          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
-                 name="nombre" autocomplete="name" required />
-        </label><br><br>
+      <label class="req">Nivel / experiencia<br>
+        <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="nivel" required>
+          <option value="" disabled selected>Selecciona…</option>
+          <option value="principiante">Principiante</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="avanzado">Avanzado</option>
+        </select>
+      </label><br><br>
 
-        <label>Teléfono<br>
-          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
-                 name="telefono" autocomplete="tel" />
-        </label><br><br>
+      <label class="req">Nombre<br>
+        <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+               name="nombre" autocomplete="name" required />
+      </label><br><br>
 
-        <label>Email<br>
-          <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
-                 type="email" name="email" autocomplete="email" />
-        </label><br><br>
+      <label class="req">Teléfono<br>
+        <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+               name="telefono" autocomplete="tel" required />
+      </label><br><br>
 
-        <label>Preferencia de contacto<br>
-          <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="contactoPreferido">
-            <option value="">Selecciona…</option>
-            <option value="whatsapp">WhatsApp</option>
-            <option value="llamada">Llamada</option>
-            <option value="email">Email</option>
-          </select>
-        </label><br><br>
+      <label class="req">Email<br>
+        <input style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+               type="email" name="email" autocomplete="email" required />
+      </label><br><br>
 
-        <label>Observaciones<br>
-          <textarea style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
-                    name="observaciones" rows="4"
-                    placeholder="Edades, alergias, dudas, si necesitas alquiler de material, etc."></textarea>
-        </label><br><br>
+      <label>Preferencia de contacto<br>
+        <select style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd" name="contactoPreferido">
+          <option value="" disabled selected>Selecciona…</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="llamada">Llamada</option>
+          <option value="email">Email</option>
+        </select>
+      </label><br><br>
 
-        <label style="display:flex;gap:10px;align-items:flex-start">
-          <input type="checkbox" name="consentimiento" required />
-          <span>Acepto que me contactéis para gestionar esta reserva.</span>
-        </label><br><br>
+      <label>Observaciones<br>
+        <textarea style="width:100%;padding:10px;border-radius:10px;border:1px solid #ddd"
+                  name="observaciones" rows="4"
+                  placeholder="Edades, alergias, dudas, si necesitas alquiler de material, etc."></textarea>
+      </label><br><br>
 
-        <div class="h-captcha" data-sitekey="199c0150-0526-42a8-9176-f63e5904efa6"></div>
-        <br>
-        
-        <!-- Honeypot anti-bot (debe quedar vacío) -->
-        <div class="hp-field" aria-hidden="true">
-          <label for="website">Website</label>
-          <input
-            type="text"
-            id="website"
-            name="website"
-            autocomplete="off"
-            tabindex="-1"
-            value=""
-          />
-        </div>
-        
-        <button class="price-btn contact" type="submit">Reservar</button>
-      </form>
-    </section>
-  </main>
+      <label class="req" style="display:flex;gap:10px;align-items:flex-start">
+        <input type="checkbox" name="consentimiento" required />
+        <span>Acepto que me contactéis para gestionar esta reserva.</span>
+      </label><br><br>
+
+      <div class="h-captcha" data-sitekey="199c0150-0526-42a8-9176-f63e5904efa6"></div>
+      <br>
+
+      <!-- Honeypot anti-bot (debe quedar vacío) -->
+      <div class="hp-field" aria-hidden="true">
+        <label for="website">Website</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          autocomplete="off"
+          tabindex="-1"
+          value=""
+        />
+      </div>
+
+      <p class="req-legend"><span class="req-star">*</span> Campo obligatorio</p>
+
+      <button class="price-btn contact" type="submit">Reservar</button>
+    </form>
+  </section>
+</main>
 
   <footer>
     <div class="wrap">

@@ -276,3 +276,30 @@ header.hero p{margin:0}
   height: 1px !important;
   overflow: hidden !important;
 }
+/* Banner de error */
+.form-banner{
+  margin: 12px 0;
+  padding: 12px 14px;
+  border: 1px solid #d33;
+  border-radius: 10px;
+  background: rgba(211, 51, 51, 0.08);
+  font-size: 0.95rem;
+}
+
+/* Asterisco en labels requeridos */
+.req::after{
+  content: " *";
+  color: #d33;
+  font-weight: 700;
+}
+
+/* Leyenda */
+.req-legend{
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.req-star{
+  color:#d33;
+  font-weight:700;
+}

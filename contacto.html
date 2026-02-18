@@ -143,7 +143,20 @@
 
         <div class="h-captcha" data-sitekey="199c0150-0526-42a8-9176-f63e5904efa6"></div>
         <br>
-
+        
+        <!-- Honeypot anti-bot (debe quedar vacío) -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="website">Website</label>
+          <input
+            type="text"
+            id="website"
+            name="website"
+            autocomplete="off"
+            tabindex="-1"
+            value=""
+          />
+        </div>
+        
         <button class="price-btn contact" type="submit">Reservar</button>
       </form>
     </section>
